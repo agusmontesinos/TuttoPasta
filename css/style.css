@@ -1,0 +1,1996 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Kaushan+Script&family=Montserrat:wght@400;600;700;800&display=swap');
+
+
+/*-------RESET-------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*-------HEADER------*/
+
+header{
+    position: sticky;  
+    top: 0;
+    z-index: 2;
+}
+
+header nav{
+    background-color: rgb(173,20,23);
+}
+
+.logo-header{
+    margin-top: 18px;
+    margin-left: 40px;
+    width: 200px;
+}
+
+
+
+.enlaces-nav{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+
+/*-----INDEX------*/
+
+
+.hero{
+    max-width: 100%;
+    height: 80vh;    
+    text-align: left;
+    background-image: url("../img/elplacerdedisfrutar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+
+.hero h1{
+    color: #E9AB33;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.hero h2{
+    color: #84BC82;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 80px;
+    margin-left: 50px;
+}
+
+.hero div a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: #FFDA57;
+    padding: 10px 40px 10px 40px;
+    margin-left: 50px;
+    border-radius: 18px;
+}
+
+.hero div a:hover{
+    background-color: #FFE792;
+}
+
+.hero div a:active{
+    background-color: #FFDA57;
+}
+
+
+/*---seccion frescas, artesanales, deliciosas---*/
+
+
+.frescas-artesanales{
+    background-color: rgb(173,20,23); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frescas-artesanales h2{
+    color: white;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 45px 100px 45px 100px;
+    margin: 0;
+}
+
+
+
+/*----sección tres generaciones----*/
+
+.generaciones{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-image: url("../img/generaciones.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generaciones div h2{
+    color: white;
+    font-size: 59px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.generaciones div p{
+    color: white;
+    font-size: 33px;
+    font-family: 'Crimson Pro', serif;
+    margin-top: 50px;
+}
+
+.recetas-de-familia{
+    margin-bottom: 100px;
+}
+
+.generaciones a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 10px 40px 10px 40px;
+    border-radius: 18px;
+}
+
+.generaciones a:hover{    
+    background-color: white;
+}
+
+
+
+/*----sección las favoritas----*/
+
+
+.favoritas{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+}
+
+.favoritas h2{
+    font-size: 55px;
+    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.favoritas-item{    
+    width: 500px;
+    height: 300px; 
+    box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+    -moz-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+}
+
+.favoritas-item h3{
+    bottom: 0;
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    background-color: rgba(11, 11, 11, 0.588);
+    width: 100%;  
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.favoritas-item img{
+    margin-bottom: 60px;  
+    width: 450px; 
+}
+
+.carousel-caption{
+    padding-bottom: 0px;
+}
+
+.ver-mas{
+    margin: 50px;
+}
+
+.ver-mas a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: rgb(255, 219, 87);
+    padding: 10px 40px 10px 40px;
+    border-radius: 18px;         
+}
+
+.ver-mas a:hover{
+    background-color: rgba(255, 219, 87, 0.625);
+}
+
+.ver-mas a:active{
+    background-color: #84BC82;
+}
+
+
+
+/*----banner mantel----*/
+
+
+.mantel-banner div{
+    width: 100%;
+    height: 150px;
+}
+
+.mantel-banner div img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+
+
+
+/*----sección frescos y tradicionales----*/
+
+
+.frescos-tradicionales{
+    width: 100%;
+    height: 998px;
+    background-color: rgb(173,20,23);    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "frescos-texto frescos-imagen"
+        "tradicionales-imagen tradicionales-texto";
+}
+
+.frescos-texto{
+    grid-area: frescos-texto;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center; 
+    text-align: center;   
+}
+
+.frescos-texto img{
+    padding-bottom: 40px;
+    width: auto;
+    height: auto;
+}
+
+.frescos-texto p{
+    width: 400px;
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.frescos-imagen{
+    grid-area: frescos-imagen;
+}
+
+
+.frescos-imagen img{ 
+    width: 100%;   
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.tradicionales-imagen{
+    grid-area: tradicionales-imagen;    
+}
+
+.tradicionales-imagen img{  
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.tradicionales-texto{
+    grid-area: tradicionales-texto;    
+    display: flex;
+    flex-direction: column;    
+    text-align: center;
+    justify-content: center;
+    align-items: center;  
+}
+
+.tradicionales-texto img{
+    padding-bottom: 40px;
+    width: auto;
+    height: auto;
+}
+
+.tradicionales-texto p{
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*----sección imagen maquina de pasta----*/
+
+.maquina-pasta{
+    background-color: rgb(173,20,23);
+}
+
+.maquina-pasta img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+
+/*---whatsapp-flotante---*/
+
+.whatsapp-flotante{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+
+
+
+/*-----PÁGINA NUESTRAS PASTAS----*/
+
+
+.variedades h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 40px;
+}
+
+.grid-menu{
+    width: 100%;
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat (5, 20%) ;
+    grid-template-areas: 
+        "texto1 imagen1"
+        "imagen2 texto2"
+        "texto3 imagen3"
+        "imagen4 texto4"
+        "texto5 imagen5";
+    
+}
+
+.texto-fideos{
+    grid-area: texto1;
+}
+
+.imagen-fideos{
+    grid-area: imagen1;
+}
+
+.imagen-ravioles{
+    grid-area: imagen2;
+}
+
+.texto-ravioles{
+    grid-area: texto2;
+}
+
+.texto-noquis{
+    grid-area: texto3;
+}
+
+.imagen-noquis{
+    grid-area: imagen3;
+}
+
+.imagen-canelones{
+    grid-area: imagen4;
+}
+
+.texto-canelones{
+    grid-area: texto4;
+}
+
+.texto-lasagna{
+    grid-area: texto5;
+}
+
+.imagen-lasagna{
+    grid-area: imagen5;
+}
+
+
+.grid-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-texto{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 219, 87, 0.182);
+    padding-top: 20px;
+}
+
+.grid-texto:nth-child(2n){
+    background-color: rgba(173, 20, 23, 0.101);
+}
+
+.grid-texto h2{
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.grid-texto ul{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    list-style: none;
+    margin-top: 50px;
+    padding-left: 0px;
+}
+
+.fideos2{
+    display: none;
+}
+
+
+
+/*-----PÁGINA NUESTRA HISTORIA-----*/
+
+
+.historia-y-mision h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 80px;
+}
+
+/*-----sección historia-----*/
+
+.historia{
+    display: flex;
+    align-items: center;
+}
+
+.historia img{
+    width: 50%;
+    height: 550px;    
+}
+
+.historia div{
+    width: 50%;
+    margin: 40px;
+    text-align: center;
+}
+
+.historia div p{
+    font-size: 25px;
+    font-family: 'Crimson Pro', serif;  
+    font-weight: 400;
+    margin: 30px;     
+}
+
+.historia div p span{
+    color: rgb(173,20,23);
+}
+
+.historia div p::selection{
+    background-color: rgb(255, 219, 87);
+}
+
+/*-----sección misión-----*/
+
+
+.mision{
+    width: 100%;
+    height: 80vh;
+    margin-top: 100px;
+    text-align: center;
+    background-image: url("../img/fideos-mision.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mision h2{
+    width: 80%;
+    color: white;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 40px;
+    
+}
+
+.mision p{
+    width: 80%;
+    color: white;    
+    font-size: 30px;
+    font-family: 'Crimson Pro', serif;  
+    font-weight: 400;     
+}
+
+.la-mejor-calidad{
+    margin: 20px;
+}
+
+.cada-pasta-fresca{
+    margin: 10px;
+}
+
+
+
+/*-----PÁGINA LOCALES-----*/
+
+
+.locales h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 80px 20px 80px 20px;
+    
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+}
+
+.villa-urquiza{
+    margin-bottom: 150px;
+    padding: 30px;
+    background-color: rgba(173, 20, 23, 0.101);
+    box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+    -moz-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);    
+}
+
+.vicente-lopez{
+    margin-bottom: 150px;
+    padding: 30px;
+    background-color: rgba(173, 20, 23, 0.101);
+    box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+    -moz-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+}
+
+.villa-urquiza iframe, .vicente-lopez iframe{
+    width: 100%;
+}
+
+.villa-urquiza h2, .vicente-lopez h2{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.direccion-horario{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.direccion-horario div p{
+    font-size: 20px;
+    font-family: 'Crimson Pro', serif;  
+    font-weight: 400; 
+}
+
+
+.direccion-urquiza{
+    width: 240px;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+}
+.icono-location{
+    width: 25px ;
+    height: 29px;
+}
+
+.icono-reloj{
+    width: 25px;
+    height: 25px;
+}
+
+.horario-urquiza{
+    width: 230px;
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+}
+
+.direccion-vlopez{
+    width: 214px;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.horario-vlopez{
+    width: 209px;
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.pedidos-ya{
+    height: 91px;
+    background-color: #FFDA57; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pedidos-ya div{
+    width: 750px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.pedidos-ya p{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.pedidos-ya img{
+    width: 70px;
+    margin-right: 20px;
+}
+
+
+
+
+
+/*------PÁGINA CONTACTO------*/
+
+
+.contacto h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 40px;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 50px;
+}
+
+.formulario div{
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px; 
+}
+
+.formulario div label {
+    font-weight: 400; 
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+}
+
+.formulario div input{
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+.formulario textarea{
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.boton-enviar input{
+    background-color: rgb(255, 219, 87);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.boton-enviar input:active{
+    background-color: #84BC82;
+}
+
+.fideos-contacto img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.fideos-contacto{
+    background-color: rgb(173,20,23);
+}
+
+
+
+
+/*------FOOTER------*/
+
+
+footer{
+    height: 350px;
+    background-color: rgb(173,20,23);
+    display: flex;
+    justify-content: space-evenly; 
+    
+    
+}
+
+.logo-footer{
+    margin-top: 120px ;
+}
+
+
+.comunicate{ 
+    width: 320px; 
+    height: 88.6px;  
+    display: flex; 
+    flex-direction: column; 
+    justify-content: left; 
+    margin-top: 100px;    
+}
+
+.comunicate h3{
+    color: white;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;        
+}
+
+footer div p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.whatsapp{
+    width: 350px;
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.whatsapp img{
+    width: 34px;
+    height: 33px;
+}
+.whatsapp p{
+    margin-left: 20px ;
+}
+
+.mail{
+    width: 350px;
+    display: flex;
+    justify-content: left;
+    
+}
+
+.mail img{
+    width: 35px;
+    height: 30px;
+}
+
+.mail p{
+    margin-left: 20px ;
+}
+
+.seguinos{
+    height: 88.6px; 
+    display: flex; 
+    flex-direction: column;  
+    justify-content: left; 
+    margin-top: 100px;   
+}
+
+.seguinos h3{
+    color: white;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    
+}
+
+.redes{    
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.icono-redes{
+    font-size: 50px;
+    color: black;
+}
+
+
+/*----MEDIA QUERIES----*/
+
+@media screen and (max-width: 1246px){
+    
+    
+    .frescas-artesanales{
+        justify-content: space-around;
+    }
+
+    .frescas-artesanales h2{
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .frescas-artesanales img{
+        padding: 0px;
+    }
+    
+    .generaciones div h2{
+        font-size: 50px;
+    }
+    
+    .generaciones div p{        
+        font-size: 30px;
+    }
+        
+    .generaciones a{        
+        font-size: 20px;        
+        padding: 10px 40px 10px 40px; 
+    }   
+
+    .recetas-de-familia{
+        margin-bottom: 80px;
+    }
+
+
+    .favoritas h2{
+        font-size: 50px;
+        margin-top: 80px;
+    }
+
+    .ver-mas a{
+        font-size: 20px;        
+    }
+
+
+    .historia img{
+        height: auto ;
+    }
+
+    .historia div p{
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 1180px){
+    
+    .generaciones div{
+        padding: 40px;
+    }
+
+
+    .favoritas h2{
+        font-size: 40px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .ver-mas a{
+        font-size: 15px;        
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+
+
+    .hero h1{
+        font-size: 60px;
+        margin-left: 0;
+    }
+    .hero h2{
+        font-size: 60px;
+        margin-left: 0;
+    }
+
+    .hero div a{
+        font-size: 15px;
+        padding: 10px 30px 10px 30px;
+        margin-left: 0px;
+        border-radius: 18px;
+    }
+
+    .mantel-banner div{
+        height: 100px;
+    }
+
+
+
+    .grid-texto h2{
+        font-size: 28px;
+    }
+
+    .grid-texto ul{
+        margin-top: 20px;
+    }
+
+    .grid-texto ul li{
+        font-size: 15px;
+    }
+
+
+
+    .mision h2{
+        font-size: 35px;
+    }
+    
+    .mision p{           
+        font-size: 25px;          
+    }
+
+
+    
+    .logo-footer img{
+        width: 248px;
+        height: 89px;
+    }
+
+    .comunicate{
+        width: auto;
+    }
+
+    .comunicate h3{
+        font-size: 20px;
+    }
+
+    .comunicate p{
+        font-size: 15px;
+    }
+    .whatsapp{
+        width: auto;
+    }
+
+    .whatsapp img{
+        width: 22px;
+        height: 22px;
+    }
+
+    .mail{
+        width: auto;
+    }
+
+    .mail img{
+        width: 25px;
+        height: 16px;
+    }
+
+    .seguinos{
+        width: auto;
+    }
+
+    .seguinos h3{
+        font-size: 20px;
+    }
+
+    .redes{
+        width: 280px;
+        margin: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1220px){
+    
+    .historia div{        
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .mail img{
+        height: 20px;
+    }
+
+    .redes i{
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1079px){
+
+    .historia div p{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 991px){
+
+    .enlaces-nav{
+        font-size: 15px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 987px){
+
+    .frescas-artesanales h2{
+        font-size: 30px;
+    }
+
+    .recetas-de-familia{
+        margin-bottom: 60px;
+    }
+
+
+
+    footer{
+        height: 550px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo-footer{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .comunicate{
+        margin: 0px;
+    }
+
+    .seguinos{
+        margin-top: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 977px){
+    
+    .historia div p{
+        margin: 0px;
+        margin-bottom: 10px;        
+    }
+}
+
+
+
+@media screen and (max-width: 914px){
+
+    .historia div p{
+        margin: 0px;
+        margin-bottom: 10px;        
+    }
+}
+
+
+
+@media screen and (max-width: 850px){
+
+    .frescos-tradicionales{
+        width: 100%;
+        height: 300px;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+            "frescos-texto tradicionales-texto";
+    }
+
+    .frescos-texto img{
+        width: 100px;
+        height: 120px;
+        padding: 0px;
+        margin: 20px;
+    }
+
+    .frescos-texto p{
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .tradicionales-texto{
+        padding-top: 40px;
+    }
+    .tradicionales-texto img{
+        width: 100px;
+        height: 100px;
+        padding: 0px;
+        margin-bottom: 40px;
+    }
+
+    .tradicionales-texto p{
+        font-size: 30px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .frescos-imagen{
+        display: none;
+    }
+
+    .tradicionales-imagen{
+        display: none;
+    }
+
+
+    .maquina-pasta img{
+        height: 350px;
+    }
+}
+
+
+
+@media screen and (max-width: 837px){
+    .historia{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historia div{
+        width: 80%;
+    }
+
+    .mision{
+        margin-top: 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 810px){
+    .frescas-artesanales{
+        flex-direction: colun;
+    }
+}
+
+
+
+@media screen and (max-width: 800px){
+    header{
+        position: static;
+    }
+
+    .hero{
+        text-align: center;
+        background-image: url(../img/background-image2.jpg);
+    }
+
+    .frescas-artesanales h2{
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    .frescas-artesanales img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .generaciones div h2{
+        font-size: 40px;
+    }
+    
+    .generaciones div p{
+        
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif;
+        margin-top: 50px;        
+    }
+        
+    .generaciones a{        
+        font-size: 15px;  
+    } 
+
+
+
+    .favoritas-item{    
+        width: 500px;
+        height: 300px; 
+    }
+
+    .variedades h1{
+        font-size: 38px;
+    }
+
+    .grid-texto h2{
+        font-size: 26px;
+    }
+
+    .grid-texto ul li{
+        font-size: 13px;
+    }
+
+
+
+    .historia-y-mision h1{
+        font-size: 38px;
+    }
+
+    .mision h2{
+        font-size: 30px;       
+    }
+    
+    .mision p{           
+        font-size: 20px;          
+    }
+
+
+
+    .locales h1{
+        font-size: 38px;
+    }
+
+    .tarjetas{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .villa-urquiza{
+        margin-bottom: 50px;
+        }
+    
+
+    .contacto h1{
+        font-size: 38px;
+    }
+
+    .whatsapp-flotante{
+        right: 20px;
+        bottom: 30px;
+    }
+    .whatsapp-flotante img{
+        width: 78px;
+        height: 78px;
+    }
+} 
+
+
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        display: block !important; 
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    .frescos-tradicionales{
+        width: 100%;
+        height: 600px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+            "frescos-texto" 
+            "tradicionales-texto";
+    }
+
+    .frescos-texto img{
+        margin-top: 80px;
+        width: 100px;
+        height: 150px;      
+    }
+
+    .tradicionales-texto{
+        padding-top: 0px;
+    }
+
+    .tradicionales-texto img{
+        margin-top: 80px;
+    }
+
+    .tradicionales-texto p{
+        margin-top: 0;
+    }
+
+    .mantel-banner div{        
+        height: 90px;        
+    }
+
+    
+    .variedades h1{
+        font-size: 36px;
+    }
+
+    .grid-texto h2{
+        font-size: 24px;
+    }
+
+    .grid-texto ul li{
+        font-size: 12px;
+    }
+
+
+
+
+    .historia-y-mision h1{
+        font-size: 36px;
+    }
+
+    .mision h2{
+        margin-bottom: 20px;
+    }
+
+
+
+    .locales h1{
+        font-size: 36px;
+    }
+
+
+
+    .contacto h1{
+        font-size: 36px;
+    }
+}
+
+
+
+@media screen and (max-width: 720px){
+    
+    .historia div p{
+        font-size: 16px;                
+    }
+
+    
+    .villa-urquiza, .vicente-lopez {
+        width: 50%;       
+        margin-bottom: 50px; 
+    }
+
+    .pedidos-ya{
+        height: 80px;
+    }
+    
+    .pedidos-ya div img{
+        display: none;
+    }
+
+    .pedidos-ya div p{
+        font-size: 20px;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .maquina-pasta img{        
+        height: 300px;
+    }
+
+
+
+    .villa-urquiza, .vicente-lopez {
+        width: auto; 
+        max-width:350px; 
+    }
+}
+
+
+@media screen and (max-width: 670px){
+    
+    .variedades h1{
+        font-size: 34px;
+    }
+
+    .grid-texto h2{
+        font-size: 22px;
+    }
+
+    .grid-texto ul li{
+        font-size: 11px;
+    }
+
+
+
+    .historia-y-mision h1{
+        font-size: 34px;
+    }
+
+
+
+    .locales h1{
+        font-size: 34px;
+    }
+
+
+
+    .contacto h1{
+        font-size: 34px;
+    }
+}
+
+
+@media screen and (max-width: 695px){
+    
+    .historia div p{
+        font-size: 14px;                
+    }
+}
+
+@media screen and (max-width: 630px){
+    
+    .variedades h1{
+        font-size: 32px;
+    }
+
+    .grid-texto h2{
+        font-size: 20px;
+    }
+
+    .grid-texto ul li{
+        font-size: 10px;
+    }
+
+
+
+    .historia-y-mision h1{
+        font-size: 32px;
+    }
+
+
+
+    .locales h1{
+        font-size: 32px;
+    }
+
+
+
+
+    .villa-urquiza h2 , .vicente-lopez h2{
+        font-size: 27px;
+        margin-top: 10px;
+    }
+
+    .villa-urquiza iframe , .vicente-lopez iframe{
+        height: 250px;        
+    }
+
+
+
+    .contacto h1{
+        font-size: 32px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 621px){
+    
+    .historia div p{
+        font-size: 12px;
+                
+    }
+
+    .mision{
+        height: 500px;
+    }
+    .mision h2{
+        font-size: 25px;
+    }
+
+    .mision p{
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px){ 
+
+    .hero h1{
+        font-size: 50px;
+    }
+
+    .hero h2{
+        font-size: 50px;
+    }
+
+
+    .frescas-artesanales{
+        padding: 10px;
+    }
+
+    .frescas-artesanales h2{
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .frescas-artesanales img{
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .generaciones div h2{
+        font-size: 30px;
+    }
+    
+    .generaciones div p{        
+        font-size: 18px;
+        font-family: 'Crimson Pro', serif;
+        margin-top: 50px;        
+    }
+        
+    .generaciones a{        
+        font-size: 10px; 
+        padding: 10px 20px; 
+    } 
+
+
+    .mantel-banner div {        
+        height: 60px;
+        
+    }
+
+
+    .favoritas h2{
+        font-size: 30px;
+    }
+
+    .favoritas-item{    
+        width: 400px;
+        height: 250px; 
+    }
+
+    .ver-mas a{
+        font-size: 10px; 
+        padding: 10px 20px; 
+    }
+
+
+    .maquina-pasta img{        
+        height: 250px;
+    }
+
+    .whatsapp-flotante img{
+        width: 68px;
+        height: 68px;
+    }
+}
+
+
+@media screen and (max-width: 554px){
+    
+    .historia div p{
+        font-size: 11px;
+    }
+
+    .mision{
+        height: 450px;
+    }
+
+    .mision h2{
+        font-size: 25px;
+    }
+
+    .mision p{
+    font-size: 16px;
+    }
+
+    .cada-pasta-fresca{
+        margin-bottom:60px;
+    }
+}
+
+
+@media screen and (max-width: 517px){
+    .mision{
+        height: auto;
+    }
+
+    .mision h2{
+        margin-top: 60px;
+    } 
+}
+
+@media screen and (max-width: 500px){ 
+    .hero{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero h2{
+        font-size: 40px;
+    }
+
+
+    .frescos-texto img{
+        width: 90px;
+        height: 110px;
+    }
+
+    .frescos-texto p{
+        font-size: 25px;
+    }
+
+    .tradicionales-texto{
+        padding-bottom: 42px;
+    }
+
+    .tradicionales-texto img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .tradicionales-texto p{
+        font-size: 25px;
+    }
+    
+    .maquina-pasta img{        
+        height: 200px;
+    }
+
+
+
+    .variedades h1{
+        font-size: 30px;
+    }
+
+    .grid-texto h2{
+        font-size: 18px;
+    }
+
+    .grid-texto ul li{
+        font-size: 9px;
+    }
+
+
+
+    .historia-y-mision h1{
+        font-size: 30px;
+    }
+
+
+
+    .locales h1{
+        font-size: 30px;
+    }
+
+
+
+    .contacto h1{
+        font-size: 30px;
+    }
+
+
+    .whatsapp-flotante img{
+        width: 58px;
+        height: 58px;
+    }
+
+}
+
+@media screen and (max-width: 460px){ 
+    .variedades h1{
+        font-size: 28px;
+    }
+
+    .grid-texto h2{
+        font-size: 16px;
+    }
+
+    .grid-texto ul li{
+        font-size: 8px;
+    }
+
+    .favoritas-item{    
+        width: 300px;
+        height: 200px;     
+    }
+
+    .pie-de-foto {
+        font-size: 16px; 
+    }
+
+
+
+    .historia-y-mision h1{
+        font-size: 28px;
+    }
+
+
+
+    .locales h1{
+        font-size: 28px;
+    }
+
+    .villa-urquiza , .vicente-lopez{
+        width: 80%;
+    }
+
+    .villa-urquiza h2 , .vicente-lopez h2{
+        font-size: 25px;
+    }
+
+    .villa-urquiza iframe , .vicente-lopez iframe{
+        height: 200px;
+    }
+
+
+    .contacto h1{
+        font-size: 28px;
+    }
+}
+
+
+
+@media screen and (max-width: 440px){ 
+
+.frescas-artesanales h2{
+    font-size: 14px;
+}
+
+.frescas-artesanales img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.grid-menu{
+        
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (10, 10%);
+    grid-template-areas: 
+        "texto1" 
+        "imagen1"
+        "texto2"
+        "imagen2"
+        "texto3"
+        "imagen3"
+        "texto4"
+        "imagen4"
+        "texto5"
+        "imagen5";
+    }
+
+    .grid-texto{
+        height: 180px;
+        background-color: rgba(255, 219, 87, 0.182);
+    }
+
+    .grid-imagen{
+        height: 180px;
+    }
+
+    .fideos1{
+        display: none;
+    }
+
+    .fideos2{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .hero h1{
+        margin-bottom: 0px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px){ 
+
+    
+    .logo-header{
+        width: 150px;
+        height: 55px;
+    }
+
+    .enlaces-nav{
+        font-size: 15px;
+        font-weight: 400;
+        padding: 2px;   
+    }
+
+    .generaciones h2{
+        font-size: 25px;
+    }
+
+    .mantel-banner div{        
+        height: 45px;
+    }
+
+
+    .favoritas h2{
+        font-size: 25px;
+        margin-bottom: 40px ;
+    }
+
+
+    .frescos-tradicionales{
+        justify-content: center;
+    }
+
+    .frescos-texto img{
+        width: 80px;
+        height: 100px;
+    }
+
+    .frescos-texto p{
+        font-size: 20px;
+    }
+
+    .tradicionales-texto img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .tradicionales-texto p{
+        font-size: 20px;
+    }
+
+    .maquina-pasta img{        
+        height: 150px;
+    }
+
+    .variedades h1{
+        font-size: 22px;
+    }
+
+    .historia-y-mision h1{
+        font-size: 22px;
+    }
+
+    .mision h2{
+        font-size: 20px;
+    }
+    
+    .mision p{
+        font-size: 15px;
+    }
+
+    .locales h1{
+        font-size: 24px;
+    }
+
+    .villa-urquiza iframe , .vicente-lopez iframe{
+        height: 150px;
+    }
+
+    .contacto h1{
+        font-size: 22px;
+    }
+
+    .logo-footer img{
+        width: 208px;
+        height: 79px;
+    }    
+        
+    .comunicate h3{
+        font-size: 18px;
+    }
+    
+    .comunicate p{
+        font-size: 13px;
+    }
+    
+    .whatsapp img{
+        width: 20px;
+        height: 20px;
+    }
+        
+    .mail img{
+        width: 23px;
+        height: 16px;
+    }
+    
+    .seguinos{
+        width: 260px;
+    }
+
+    .seguinos h3{
+        font-size: 18px;
+    }
+    
+    .redes{
+        width: 260px;
+    }
+
+    .whatsapp-flotante img{
+        width: 48px;
+        height: 48px;
+    }
+}
+
+
