@@ -25,11 +25,9 @@ header nav{
 
 .logo-header{
     margin-top: 18px;
-    margin-left: 40px;
+    margin-left: 20px;
     width: 200px;
 }
-
-
 
 .enlaces-nav{
     color: white;
@@ -39,7 +37,10 @@ header nav{
     font-weight: 600;
 }
 
-
+.icono-menu{
+    color: white;
+    font-size: 40px;
+}
 
 
 
@@ -217,10 +218,6 @@ header nav{
     width: 450px; 
 }
 
-.carousel-caption{
-    padding-bottom: 0px;
-}
-
 .ver-mas{
     margin: 50px;
 }
@@ -385,11 +382,14 @@ header nav{
 
 /*-----PÁGINA NUESTRAS PASTAS----*/
 
+.variedades{
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 .variedades h1{
     text-align: center;
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;    
     font-weight: 600;
     margin: 40px;
 }
@@ -448,41 +448,46 @@ header nav{
     grid-area: imagen5;
 }
 
-
-.grid-imagen img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.grid-texto{
+.grid-menu div{
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 219, 87, 0.182);
-    padding-top: 20px;
+    
 }
 
-.grid-texto:nth-child(2n){
+.grid-menu div:nth-child(2n){
     background-color: rgba(173, 20, 23, 0.101);
 }
 
-.grid-texto h2{
-    font-size: 38px;
-    font-family: 'Montserrat', sans-serif;
+.grid-menu div h2{
+    font-size: 38px;    
     font-weight: 600;
+    margin-bottom: 0px;
 }
 
-.grid-texto ul{
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+.grid-menu div ul{     
     font-weight: 400;
     list-style: none;
     margin-top: 50px;
+    margin-bottom: 0px;
     padding-left: 0px;
 }
+
+.grid-menu div ul li{
+    font-size: 20px;   
+}
+
+
+.grid-menu div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 .fideos2{
     display: none;
@@ -964,9 +969,6 @@ footer div p{
         margin-bottom: 40px;
     }
 
-    .ver-mas a{
-        font-size: 15px;        
-    }
 }
 
 
@@ -983,7 +985,6 @@ footer div p{
     }
 
     .hero div a{
-        font-size: 15px;
         padding: 10px 30px 10px 30px;
         margin-left: 0px;
         border-radius: 18px;
@@ -995,17 +996,18 @@ footer div p{
 
 
 
-    .grid-texto h2{
+    .grid-menu div h2{
         font-size: 28px;
     }
 
-    .grid-texto ul{
+    .grid-menu div ul{
         margin-top: 20px;
     }
 
-    .grid-texto ul li{
+    .grid-menu div ul li{
         font-size: 15px;
     }
+
 
 
 
@@ -1086,6 +1088,10 @@ footer div p{
         font-size: 30px;
     }
 
+    .grid-menu div ul li{
+        font-size: 18px;
+    }
+
 }
 
 
@@ -1103,7 +1109,6 @@ footer div p{
 
     .enlaces-nav{
         font-size: 15px;
-        padding: 0px;
     }
 }
 
@@ -1243,12 +1248,16 @@ footer div p{
 
 @media screen and (max-width: 800px){
     header{
-        position: static;
+        position: sticky;
     }
 
     .hero{
         text-align: center;
         background-image: url(../img/background-image2.jpg);
+    }
+
+    .hero div a{
+        font-size: 15px;
     }
 
     .frescas-artesanales h2{
@@ -1266,7 +1275,6 @@ footer div p{
     }
     
     .generaciones div p{
-        
         font-size: 25px;
         font-family: 'Crimson Pro', serif;
         margin-top: 50px;        
@@ -1283,16 +1291,22 @@ footer div p{
         height: 300px; 
     }
 
+    .ver-mas a{
+        font-size: 15px;        
+    }
+
+
+
     .variedades h1{
         font-size: 38px;
     }
 
-    .grid-texto h2{
+    .grid-menu div h2{
         font-size: 26px;
     }
 
-    .grid-texto ul li{
-        font-size: 13px;
+    .grid-menu div ul li{
+        font-size: 14px;
     }
 
 
@@ -1387,16 +1401,11 @@ footer div p{
         font-size: 36px;
     }
 
-    .grid-texto h2{
+    .grid-menu div h2{
         font-size: 24px;
     }
 
-    .grid-texto ul li{
-        font-size: 12px;
-    }
-
-
-
+    
 
     .historia-y-mision h1{
         font-size: 36px;
@@ -1468,14 +1477,6 @@ footer div p{
         font-size: 34px;
     }
 
-    .grid-texto h2{
-        font-size: 22px;
-    }
-
-    .grid-texto ul li{
-        font-size: 11px;
-    }
-
 
 
     .historia-y-mision h1{
@@ -1496,12 +1497,6 @@ footer div p{
 }
 
 
-@media screen and (max-width: 695px){
-    
-    .historia div p{
-        font-size: 14px;                
-    }
-}
 
 @media screen and (max-width: 630px){
     
@@ -1509,15 +1504,7 @@ footer div p{
         font-size: 32px;
     }
 
-    .grid-texto h2{
-        font-size: 20px;
-    }
-
-    .grid-texto ul li{
-        font-size: 10px;
-    }
-
-
+    
 
     .historia-y-mision h1{
         font-size: 32px;
@@ -1553,11 +1540,6 @@ footer div p{
 
 @media screen and (max-width: 621px){
     
-    .historia div p{
-        font-size: 12px;
-                
-    }
-
     .mision{
         height: 500px;
     }
@@ -1609,7 +1591,6 @@ footer div p{
     }
         
     .generaciones a{        
-        font-size: 10px; 
         padding: 10px 20px; 
     } 
 
@@ -1630,7 +1611,6 @@ footer div p{
     }
 
     .ver-mas a{
-        font-size: 10px; 
         padding: 10px 20px; 
     }
 
@@ -1643,15 +1623,55 @@ footer div p{
         width: 68px;
         height: 68px;
     }
+
+    
+    .grid-menu{        
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (10, 10%);
+        grid-template-areas: 
+            "texto1" 
+            "imagen1"
+            "texto2"
+            "imagen2"
+            "texto3"
+            "imagen3"
+            "texto4"
+            "imagen4"
+            "texto5"
+            "imagen5";
+    }
+
+    .texto-fideos{
+        height: 220px;
+    }
+
+    .texto-noquis, .texto-lasagna{
+        height: 180px;
+        background-color: rgba(255, 219, 87, 0.182);
+    }
+
+    .texto-ravioles, .texto-canelones{
+        height: 180px;
+        background-color:rgba(173, 20, 23, 0.101);
+    }
+    
+    
+    .imagen-fideos, .imagen-ravioles, .imagen-noquis, .imagen-canelones, .imagen-lasagna{
+        height: 180px;
+    }
+
+    .fideos1{
+        display: none;
+    }
+
+    .fideos2{
+        display: flex;
+    }
 }
 
 
 @media screen and (max-width: 554px){
     
-    .historia div p{
-        font-size: 11px;
-    }
-
     .mision{
         height: 450px;
     }
@@ -1725,15 +1745,7 @@ footer div p{
         font-size: 30px;
     }
 
-    .grid-texto h2{
-        font-size: 18px;
-    }
-
-    .grid-texto ul li{
-        font-size: 9px;
-    }
-
-
+    
 
     .historia-y-mision h1{
         font-size: 30px;
@@ -1764,14 +1776,7 @@ footer div p{
         font-size: 28px;
     }
 
-    .grid-texto h2{
-        font-size: 16px;
-    }
-
-    .grid-texto ul li{
-        font-size: 8px;
-    }
-
+    
     .favoritas-item{    
         width: 300px;
         height: 200px;     
@@ -1815,49 +1820,13 @@ footer div p{
 
 @media screen and (max-width: 440px){ 
 
-.frescas-artesanales h2{
-    font-size: 14px;
-}
-
-.frescas-artesanales img{
-    width: 20px;
-    height: 20px;
-}
-
-
-
-.grid-menu{
-        
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat (10, 10%);
-    grid-template-areas: 
-        "texto1" 
-        "imagen1"
-        "texto2"
-        "imagen2"
-        "texto3"
-        "imagen3"
-        "texto4"
-        "imagen4"
-        "texto5"
-        "imagen5";
+    .frescas-artesanales h2{
+        font-size: 14px;
     }
 
-    .grid-texto{
-        height: 180px;
-        background-color: rgba(255, 219, 87, 0.182);
-    }
-
-    .grid-imagen{
-        height: 180px;
-    }
-
-    .fideos1{
-        display: none;
-    }
-
-    .fideos2{
-        display: flex;
+    .frescas-artesanales img{
+        width: 20px;
+        height: 20px;
     }
 }
 
