@@ -1,0 +1,1362 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Kaushan+Script&family=Montserrat:wght@400;600;700;800&display=swap");
+/*-------RESET-------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*----BOOTSTRAP----*/
+/*----Carrusel favoritas----*/
+.favoritas-item {
+  width: 500px;
+  height: 300px;
+  box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37); }
+
+/*---WHATSAPP FLOTANTE---*/
+.whatsapp-flotante {
+  position: fixed;
+  right: 50px;
+  bottom: 50px; }
+
+/*-------HEADER------*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2; }
+
+header nav {
+  background-color: #ad1417; }
+
+.logo-header {
+  margin-top: 18px;
+  margin-left: 20px;
+  width: 200px; }
+
+.enlaces-nav {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; }
+
+.icono-menu {
+  color: white;
+  font-size: 40px; }
+
+/*-----INDEX------*/
+.hero {
+  max-width: 100%;
+  height: 80vh;
+  text-align: left;
+  background-image: url("../img/elplacerdedisfrutar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px; }
+  .hero h1 {
+    color: #E9AB33;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    margin-left: 50px; }
+  .hero h2 {
+    color: #84BC82;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 80px;
+    margin-left: 50px; }
+  .hero div a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: #FFDA57;
+    padding: 10px 40px 10px 40px;
+    margin-left: 50px;
+    border-radius: 18px; }
+    .hero div a:hover {
+      background-color: #FFE792; }
+    .hero div a:active {
+      background-color: #FFDA57; }
+
+/*---seccion frescas, artesanales, deliciosas---*/
+.frescas-artesanales {
+  background-color: #ad1417;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .frescas-artesanales h2 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 45px 100px 45px 100px;
+    margin: 0; }
+
+/*----sección tres generaciones----*/
+.generaciones {
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  background-image: url("../img/generaciones.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .generaciones div h2 {
+    color: white;
+    font-size: 59px;
+    font-family: 'Kaushan Script', cursive; }
+  .generaciones div p {
+    color: white;
+    font-size: 33px;
+    font-family: 'Crimson Pro', serif;
+    margin-top: 50px; }
+  .generaciones div .recetas-de-familia {
+    margin-bottom: 100px; }
+  .generaciones div a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 10px 40px 10px 40px;
+    border-radius: 18px; }
+    .generaciones div a:hover {
+      background-color: white; }
+
+/*----banner mantel----*/
+.mantel-banner div {
+  width: 100%;
+  height: 150px; }
+  .mantel-banner div img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover; }
+
+/*----sección las favoritas----*/
+.favoritas {
+  width: 100%;
+  height: 80%;
+  text-align: center; }
+  .favoritas h2 {
+    font-size: 55px;
+    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .favoritas .ver-mas {
+    margin: 50px; }
+    .favoritas .ver-mas a {
+      color: black;
+      text-decoration: none;
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      background-color: #ffdb57;
+      padding: 10px 40px 10px 40px;
+      border-radius: 18px; }
+      .favoritas .ver-mas a:hover {
+        background-color: rgba(255, 219, 87, 0.625); }
+      .favoritas .ver-mas a:active {
+        background-color: #84BC82; }
+
+/*----sección frescos y tradicionales----*/
+.frescos-tradicionales {
+  width: 100%;
+  height: 998px;
+  background-color: #ad1417;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "frescos-texto frescos-imagen" "tradicionales-imagen tradicionales-texto"; }
+  .frescos-tradicionales .frescos-texto {
+    grid-area: frescos-texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .frescos-tradicionales .frescos-texto img {
+      padding-bottom: 40px;
+      width: auto;
+      height: auto; }
+    .frescos-tradicionales .frescos-texto p {
+      width: 400px;
+      color: white;
+      font-size: 35px;
+      font-family: sans-serif;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      text-align: center; }
+  .frescos-tradicionales .frescos-imagen {
+    grid-area: frescos-imagen; }
+    .frescos-tradicionales .frescos-imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .frescos-tradicionales .tradicionales-imagen {
+    grid-area: tradicionales-imagen; }
+    .frescos-tradicionales .tradicionales-imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .frescos-tradicionales .tradicionales-texto {
+    grid-area: tradicionales-texto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+    .frescos-tradicionales .tradicionales-texto img {
+      padding-bottom: 40px;
+      width: auto;
+      height: auto; }
+    .frescos-tradicionales .tradicionales-texto p {
+      color: white;
+      font-size: 35px;
+      font-family: sans-serif;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      text-align: center; }
+
+/*----sección imagen maquina de pasta----*/
+.maquina-pasta {
+  background-color: #ad1417; }
+  .maquina-pasta img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover; }
+
+/*-----PÁGINA NUESTRAS PASTAS----*/
+.variedades {
+  font-family: 'Montserrat', sans-serif; }
+  .variedades h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 40px; }
+  .variedades .grid-menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat 5, 20%;
+    grid-template-areas: "texto1 imagen1" "imagen2 texto2" "texto3 imagen3" "imagen4 texto4" "texto5 imagen5"; }
+    .variedades .grid-menu .texto-fideos {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 219, 87, 0.182);
+      grid-area: texto1; }
+      .variedades .grid-menu .texto-fideos h2 {
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 0px; }
+      .variedades .grid-menu .texto-fideos ul {
+        font-weight: 400;
+        list-style: none;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-left: 0px; }
+        .variedades .grid-menu .texto-fideos ul li {
+          font-size: 20px; }
+    .variedades .grid-menu .imagen-fideos {
+      grid-area: imagen1; }
+      .variedades .grid-menu .imagen-fideos .fideos1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .variedades .grid-menu .imagen-fideos .fideos2 {
+        display: none; }
+    .variedades .grid-menu .imagen-ravioles {
+      grid-area: imagen2; }
+      .variedades .grid-menu .imagen-ravioles img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .variedades .grid-menu .texto-ravioles {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(173, 20, 23, 0.101);
+      grid-area: texto2; }
+      .variedades .grid-menu .texto-ravioles h2 {
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 0px; }
+      .variedades .grid-menu .texto-ravioles ul {
+        font-weight: 400;
+        list-style: none;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-left: 0px; }
+        .variedades .grid-menu .texto-ravioles ul li {
+          font-size: 20px; }
+    .variedades .grid-menu .texto-noquis {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 219, 87, 0.182);
+      grid-area: texto3; }
+      .variedades .grid-menu .texto-noquis h2 {
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 0px; }
+      .variedades .grid-menu .texto-noquis ul {
+        font-weight: 400;
+        list-style: none;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-left: 0px; }
+        .variedades .grid-menu .texto-noquis ul li {
+          font-size: 20px; }
+    .variedades .grid-menu .imagen-noquis {
+      grid-area: imagen3; }
+      .variedades .grid-menu .imagen-noquis img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .variedades .grid-menu .imagen-canelones {
+      grid-area: imagen4; }
+      .variedades .grid-menu .imagen-canelones img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .variedades .grid-menu .texto-canelones {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(173, 20, 23, 0.101);
+      grid-area: texto4; }
+      .variedades .grid-menu .texto-canelones h2 {
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 0px; }
+      .variedades .grid-menu .texto-canelones ul {
+        font-weight: 400;
+        list-style: none;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-left: 0px; }
+        .variedades .grid-menu .texto-canelones ul li {
+          font-size: 20px; }
+    .variedades .grid-menu .texto-lasagna {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 219, 87, 0.182);
+      grid-area: texto5; }
+      .variedades .grid-menu .texto-lasagna h2 {
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 0px; }
+      .variedades .grid-menu .texto-lasagna ul {
+        font-weight: 400;
+        list-style: none;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-left: 0px; }
+        .variedades .grid-menu .texto-lasagna ul li {
+          font-size: 20px; }
+    .variedades .grid-menu .imagen-lasagna {
+      grid-area: imagen5; }
+      .variedades .grid-menu .imagen-lasagna img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/*-----PÁGINA NUESTRA HISTORIA-----*/
+.historia-y-mision h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 80px; }
+
+.historia-y-mision .historia {
+  display: flex;
+  align-items: center; }
+  .historia-y-mision .historia img {
+    width: 50%;
+    height: 550px; }
+  .historia-y-mision .historia div {
+    width: 50%;
+    margin: 40px;
+    text-align: center; }
+    .historia-y-mision .historia div p {
+      font-size: 25px;
+      font-family: 'Crimson Pro', serif;
+      font-weight: 400;
+      margin: 30px; }
+      .historia-y-mision .historia div p span {
+        color: #ad1417; }
+      .historia-y-mision .historia div p::selection {
+        background-color: #ffdb57; }
+
+.historia-y-mision .mision {
+  width: 100%;
+  height: 80vh;
+  margin-top: 100px;
+  text-align: center;
+  background-image: url("../img/fideos-mision.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .historia-y-mision .mision h2 {
+    width: 80%;
+    color: white;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 40px; }
+  .historia-y-mision .mision .la-mejor-calidad {
+    width: 80%;
+    color: white;
+    font-size: 30px;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 400;
+    margin: 20px; }
+  .historia-y-mision .mision .cada-pasta-fresca {
+    width: 80%;
+    color: white;
+    font-size: 30px;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 400;
+    margin: 10px; }
+
+/*-----PÁGINA LOCALES-----*/
+.locales h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 80px 20px 80px 20px; }
+
+.locales .tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .locales .tarjetas .villa-urquiza {
+    margin-bottom: 150px;
+    padding: 30px;
+    background-color: rgba(173, 20, 23, 0.101);
+    box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37);
+    -webkit-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37); }
+    .locales .tarjetas .villa-urquiza h2 {
+      font-size: 35px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      margin-bottom: 40px;
+      text-align: center; }
+    .locales .tarjetas .villa-urquiza .direccion-horario {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .locales .tarjetas .villa-urquiza .direccion-horario .direccion-urquiza {
+        width: 240px;
+        display: flex;
+        justify-content: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: space-evenly; }
+        .locales .tarjetas .villa-urquiza .direccion-horario .direccion-urquiza .icono-location {
+          width: 25px;
+          height: 29px; }
+        .locales .tarjetas .villa-urquiza .direccion-horario .direccion-urquiza p {
+          font-size: 20px;
+          font-family: 'Crimson Pro', serif;
+          font-weight: 400; }
+      .locales .tarjetas .villa-urquiza .direccion-horario .horario-urquiza {
+        width: 230px;
+        display: flex;
+        justify-content: left;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        justify-content: space-evenly; }
+        .locales .tarjetas .villa-urquiza .direccion-horario .horario-urquiza .icono-reloj {
+          width: 25px;
+          height: 25px; }
+        .locales .tarjetas .villa-urquiza .direccion-horario .horario-urquiza p {
+          font-size: 20px;
+          font-family: 'Crimson Pro', serif;
+          font-weight: 400; }
+    .locales .tarjetas .villa-urquiza iframe {
+      width: 100%; }
+  .locales .tarjetas .vicente-lopez {
+    margin-bottom: 150px;
+    padding: 30px;
+    background-color: rgba(173, 20, 23, 0.101);
+    box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37);
+    -webkit-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37); }
+    .locales .tarjetas .vicente-lopez h2 {
+      font-size: 35px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      margin-bottom: 40px;
+      text-align: center; }
+    .locales .tarjetas .vicente-lopez .direccion-horario {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .locales .tarjetas .vicente-lopez .direccion-horario .direccion-vlopez {
+        width: 214px;
+        display: flex;
+        justify-content: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: space-between; }
+        .locales .tarjetas .vicente-lopez .direccion-horario .direccion-vlopez .icono-location {
+          width: 25px;
+          height: 29px; }
+        .locales .tarjetas .vicente-lopez .direccion-horario .direccion-vlopez p {
+          font-size: 20px;
+          font-family: 'Crimson Pro', serif;
+          font-weight: 400; }
+      .locales .tarjetas .vicente-lopez .direccion-horario .horario-vlopez {
+        width: 209px;
+        display: flex;
+        justify-content: left;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        justify-content: space-between; }
+        .locales .tarjetas .vicente-lopez .direccion-horario .horario-vlopez .icono-reloj {
+          width: 25px;
+          height: 25px; }
+        .locales .tarjetas .vicente-lopez .direccion-horario .horario-vlopez p {
+          font-size: 20px;
+          font-family: 'Crimson Pro', serif;
+          font-weight: 400; }
+    .locales .tarjetas .vicente-lopez iframe {
+      width: 100%; }
+
+.locales .pedidos-ya {
+  height: 91px;
+  background-color: #FFDA57;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .locales .pedidos-ya div {
+    width: 750px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center; }
+    .locales .pedidos-ya div img {
+      width: 70px;
+      margin-right: 20px; }
+    .locales .pedidos-ya div p {
+      text-align: center;
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      margin: 0px; }
+
+/*------PÁGINA CONTACTO------*/
+.contacto h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 40px; }
+
+.contacto section .formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px; }
+  .contacto section .formulario div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; }
+    .contacto section .formulario div label {
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 5px; }
+    .contacto section .formulario div input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px; }
+  .contacto section .formulario div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; }
+    .contacto section .formulario div label {
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 5px; }
+    .contacto section .formulario div input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px; }
+  .contacto section .formulario div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; }
+    .contacto section .formulario div label {
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 5px; }
+    .contacto section .formulario div input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px; }
+  .contacto section .formulario div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; }
+    .contacto section .formulario div label {
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 5px; }
+    .contacto section .formulario div textarea {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif; }
+  .contacto section .formulario .boton-enviar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; }
+    .contacto section .formulario .boton-enviar input {
+      background-color: #ffdb57;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600; }
+      .contacto section .formulario .boton-enviar input:active {
+        background-color: #84BC82; }
+
+.contacto .fideos-contacto {
+  background-color: #ad1417; }
+  .contacto .fideos-contacto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; }
+
+footer {
+  height: 350px;
+  background-color: #ad1417;
+  display: flex;
+  justify-content: space-evenly; }
+  footer .logo-footer {
+    margin-top: 120px; }
+  footer .comunicate {
+    width: 320px;
+    height: 88.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 100px; }
+    footer .comunicate h3 {
+      color: white;
+      font-size: 22px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600; }
+    footer .comunicate .whatsapp {
+      width: 350px;
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+      margin-bottom: 30px; }
+      footer .comunicate .whatsapp img {
+        width: 34px;
+        height: 33px; }
+      footer .comunicate .whatsapp p {
+        color: white;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        margin-left: 20px; }
+    footer .comunicate .mail {
+      width: 350px;
+      display: flex;
+      justify-content: left; }
+      footer .comunicate .mail img {
+        width: 35px;
+        height: 30px; }
+      footer .comunicate .mail p {
+        color: white;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        margin-left: 20px; }
+  footer .seguinos {
+    height: 88.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 100px; }
+    footer .seguinos h3 {
+      color: white;
+      font-size: 22px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600; }
+    footer .seguinos .redes {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 30px; }
+      footer .seguinos .redes .icono-redes {
+        font-size: 50px;
+        color: black; }
+
+/*----MEDIA QUERIES----*/
+@media screen and (max-width: 1246px) {
+  .frescas-artesanales {
+    justify-content: space-around; }
+  .frescas-artesanales h2 {
+    padding: 20px;
+    font-size: 40px; }
+  .frescas-artesanales img {
+    padding: 0px; }
+  .generaciones div h2 {
+    font-size: 50px; }
+  .generaciones div p {
+    font-size: 30px; }
+  .generaciones div .recetas-de-familia {
+    margin-bottom: 80px; }
+  .favoritas h2 {
+    font-size: 50px;
+    margin-top: 80px; }
+  .historia-y-mision .historia img {
+    height: auto; }
+  .historia-y-mision .historia div p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 1220px) {
+  .historia div {
+    text-align: center; } }
+
+@media screen and (max-width: 1180px) {
+  .generaciones div {
+    padding: 40px; }
+  .favoritas h2 {
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 40px; } }
+
+@media screen and (max-width: 1100px) {
+  .hero h1 {
+    font-size: 60px;
+    margin-left: 0; }
+  .hero h2 {
+    font-size: 60px;
+    margin-left: 0; }
+  .hero div a {
+    padding: 10px 30px 10px 30px;
+    margin-left: 0px;
+    border-radius: 18px; }
+  .mantel-banner div {
+    height: 100px; }
+  .variedades .grid-menu .texto-fideos h2 {
+    font-size: 28px; }
+  .variedades .grid-menu .texto-fideos ul {
+    margin-top: 20px; }
+  .variedades .grid-menu .texto-fideos ul li {
+    font-size: 18px; }
+  .variedades .grid-menu .texto-ravioles h2 {
+    font-size: 28px; }
+  .variedades .grid-menu .texto-ravioles ul {
+    margin-top: 20px; }
+  .variedades .grid-menu .texto-ravioles ul li {
+    font-size: 18px; }
+  .variedades .grid-menu .texto-noquis h2 {
+    font-size: 28px; }
+  .variedades .grid-menu .texto-noquis ul {
+    margin-top: 20px; }
+  .variedades .grid-menu .texto-noquis ul li {
+    font-size: 18px; }
+  .variedades .grid-menu .texto-canelones h2 {
+    font-size: 28px; }
+  .variedades .grid-menu .texto-canelones ul {
+    margin-top: 20px; }
+  .variedades .grid-menu .texto-canelones ul li {
+    font-size: 18px; }
+  .variedades .grid-menu .texto-lasagna h2 {
+    font-size: 28px; }
+  .variedades .grid-menu .texto-lasagna ul {
+    margin-top: 20px; }
+  .variedades .grid-menu .texto-lasagna ul li {
+    font-size: 18px; }
+  .historia-y-mision .mision h2 {
+    font-size: 35px; }
+  .historia-y-mision .mision .la-mejor-calidad {
+    font-size: 25px; }
+  .historia-y-mision .mision .cada-pasta-fresca {
+    font-size: 25px; }
+  footer .logo-footer img {
+    width: 248px;
+    height: 89px; }
+  footer .comunicate {
+    width: auto; }
+  footer .comunicate h3 {
+    font-size: 20px; }
+  footer .comunicate .whatsapp p {
+    font-size: 15px; }
+  footer .comunicate .mail p {
+    font-size: 15px; }
+  footer .comunicate .whatsapp {
+    width: auto; }
+  footer .comunicate .whatsapp img {
+    width: 22px;
+    height: 22px; }
+  footer .comunicate .mail {
+    width: auto; }
+  footer .comunicate .mail img {
+    width: 25px;
+    height: 20px; }
+  footer .seguinos {
+    width: auto; }
+  footer .seguinos h3 {
+    font-size: 20px; }
+  footer .seguinos .redes {
+    width: 280px;
+    margin: 0; }
+  footer .seguinos .redes .icono-redes i {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1079px) {
+  .historia-y-mision .historia div p {
+    font-size: 18px; } }
+
+@media screen and (max-width: 991px) {
+  .enlaces-nav {
+    font-size: 15px; } }
+
+@media screen and (max-width: 987px) {
+  .frescas-artesanales h2 {
+    font-size: 30px; }
+  .recetas-de-familia {
+    margin-bottom: 60px; }
+  footer {
+    height: 550px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  footer .logo-footer {
+    margin: 0px;
+    padding: 0px; }
+  footer .comunicate {
+    margin: 0px; }
+  footer .seguinos {
+    margin-top: 40px; } }
+
+@media screen and (max-width: 977px) {
+  .historia-y-mision .historia div p {
+    margin: 0px;
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 914px) {
+  .historia-y-mision .historia div p {
+    margin: 0px;
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 850px) {
+  .frescos-tradicionales {
+    width: 100%;
+    height: 300px;
+    grid-template-rows: 100%;
+    grid-template-areas: "frescos-texto tradicionales-texto"; }
+  .frescos-tradicionales .frescos-texto img {
+    width: 100px;
+    height: 120px;
+    padding: 0px;
+    margin: 20px; }
+  .frescos-tradicionales .frescos-texto p {
+    font-size: 30px;
+    width: 300px; }
+  .frescos-tradicionales .tradicionales-texto {
+    padding-top: 40px; }
+  .frescos-tradicionales .tradicionales-texto img {
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin-bottom: 40px; }
+  .frescos-tradicionales .tradicionales-texto p {
+    font-size: 30px;
+    margin-top: 20px;
+    padding-bottom: 40px; }
+  .frescos-tradicionales .frescos-imagen {
+    display: none; }
+  .frescos-tradicionales .tradicionales-imagen {
+    display: none; }
+  .maquina-pasta img {
+    height: 350px; } }
+
+@media screen and (max-width: 837px) {
+  .historia-y-mision .historia {
+    flex-direction: column;
+    align-items: center; }
+  .historia-y-mision .historia div {
+    width: 80%; }
+  .historia-y-mision .mision {
+    margin-top: 50px; } }
+
+@media screen and (max-width: 810px) {
+  .frescas-artesanales {
+    flex-direction: colun; } }
+
+@media screen and (max-width: 800px) {
+  header {
+    position: sticky; }
+  .hero {
+    text-align: center;
+    background-image: url(../img/background-image2.jpg); }
+  .hero div a {
+    font-size: 15px; }
+  .frescas-artesanales h2 {
+    padding: 20px;
+    font-size: 25px; }
+  .frescas-artesanales img {
+    width: 32px;
+    height: 32px; }
+  .generaciones div h2 {
+    font-size: 40px; }
+  .generaciones div p {
+    font-size: 25px;
+    font-family: 'Crimson Pro', serif;
+    margin-top: 50px; }
+  .generaciones div a {
+    font-size: 15px; }
+  .favoritas-item {
+    width: 500px;
+    height: 300px; }
+  .favoritas .ver-mas a {
+    font-size: 15px; }
+  .variedades h1 {
+    font-size: 38px; }
+  .variedades .grid-menu .texto-fideos h2 {
+    font-size: 26px; }
+  .variedades .grid-menu .texto-fideos ul li {
+    font-size: 14px; }
+  .variedades .grid-menu .texto-ravioles h2 {
+    font-size: 26px; }
+  .variedades .grid-menu .texto-ravioles ul li {
+    font-size: 14px; }
+  .variedades .grid-menu .texto-noquis h2 {
+    font-size: 26px; }
+  .variedades .grid-menu .texto-noquis ul li {
+    font-size: 14px; }
+  .variedades .grid-menu .texto-canelones h2 {
+    font-size: 26px; }
+  .variedades .grid-menu .texto-canelones ul li {
+    font-size: 14px; }
+  .variedades .grid-menu .texto-lasagna h2 {
+    font-size: 26px; }
+  .variedades .grid-menu .texto-lasagna ul li {
+    font-size: 14px; }
+  .historia-y-mision h1 {
+    font-size: 38px; }
+  .historia-y-mision .mision h2 {
+    font-size: 30px; }
+  .historia-y-mision .mision .la-mejor-calidad {
+    font-size: 20px; }
+  .historia-y-mision .mision .cada-pasta-fresca {
+    font-size: 20px; }
+  .locales h1 {
+    font-size: 38px; }
+  .locales .tarjetas {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .locales .tarjetas .villa-urquiza {
+    margin-bottom: 50px; }
+  .contacto h1 {
+    font-size: 38px; }
+  .whatsapp-flotante {
+    right: 20px;
+    bottom: 30px; }
+  .whatsapp-flotante img {
+    width: 78px;
+    height: 78px; } }
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    display: block !important; } }
+
+@media screen and (max-width: 750px) {
+  .frescos-tradicionales {
+    width: 100%;
+    height: 600px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "frescos-texto"  "tradicionales-texto"; }
+  .frescos-tradicionales .frescos-texto img {
+    margin-top: 80px;
+    width: 100px;
+    height: 150px; }
+  .frescos-tradicionales .tradicionales-texto {
+    padding-top: 0px; }
+  .frescos-tradicionales .tradicionales-texto img {
+    margin-top: 80px; }
+  .frescos-tradicionales .tradicionales-texto p {
+    margin-top: 0; }
+  .mantel-banner div {
+    height: 90px; }
+  .variedades h1 {
+    font-size: 36px; }
+  .variedades .grid-menu .texto-fideos h2 {
+    font-size: 24px; }
+  .variedades .grid-menu .texto-ravioles h2 {
+    font-size: 24px; }
+  .variedades .grid-menu .texto-noquis h2 {
+    font-size: 24px; }
+  .variedades .grid-menu .texto-canelones h2 {
+    font-size: 24px; }
+  .variedades .grid-menu .texto-lasagna h2 {
+    font-size: 24px; }
+  .historia-y-mision h1 {
+    font-size: 36px; }
+  .historia-y-mision .mision h2 {
+    margin-bottom: 20px; }
+  .locales h1 {
+    font-size: 36px; }
+  .contacto h1 {
+    font-size: 36px; } }
+
+@media screen and (max-width: 720px) {
+  .historia-y-mision .historia div p {
+    font-size: 16px; }
+  .locales .tarjetas .villa-urquiza {
+    width: 50%;
+    margin-bottom: 50px; }
+  .locales .tarjetas .vicente-lopez {
+    width: 50%;
+    margin-bottom: 50px; }
+  .locales .pedidos-ya {
+    height: 80px; }
+  .locales .pedidos-ya div img {
+    display: none; }
+  .locales .pedidos-ya div p {
+    font-size: 20px;
+    width: 80%; } }
+
+@media screen and (max-width: 700px) {
+  .maquina-pasta img {
+    height: 300px; }
+  .locales .tarjetas .villa-urquiza {
+    width: auto;
+    max-width: 350px; }
+  .locales .tarjetas .vicente-lopez {
+    width: auto;
+    max-width: 350px; } }
+
+@media screen and (max-width: 670px) {
+  .variedades h1 {
+    font-size: 34px; }
+  .historia-y-mision h1 {
+    font-size: 34px; }
+  .locales h1 {
+    font-size: 34px; }
+  .contacto h1 {
+    font-size: 34px; } }
+
+@media screen and (max-width: 630px) {
+  .variedades h1 {
+    font-size: 32px; }
+  .historia-y-mision h1 {
+    font-size: 32px; }
+  .locales h1 {
+    font-size: 32px; }
+  .locales .tarjetas .villa-urquiza h2 {
+    font-size: 27px;
+    margin-top: 10px; }
+  .locales .tarjetas .vicente-lopez h2 {
+    font-size: 27px;
+    margin-top: 10px; }
+  .locales .tarjetas .villa-urquiza iframe {
+    height: 250px; }
+  .locales .tarjetas .vicente-lopez iframe {
+    height: 250px; }
+  .contacto h1 {
+    font-size: 32px; } }
+
+@media screen and (max-width: 621px) {
+  .historia-y-mision .mision {
+    height: 500px; }
+  .historia-y-mision .mision h2 {
+    font-size: 25px; }
+  .historia-y-mision .mision .la-mejor-calidad {
+    font-size: 18px; }
+  .historia-y-mision .mision .cada-pasta-fresca {
+    font-size: 18px; } }
+
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 50px; }
+  .hero h2 {
+    font-size: 50px; }
+  .frescas-artesanales {
+    padding: 10px; }
+  .frescas-artesanales h2 {
+    padding: 10px;
+    font-size: 20px; }
+  .frescas-artesanales img {
+    width: 25px;
+    height: 25px; }
+  .generaciones div h2 {
+    font-size: 30px; }
+  .generaciones div p {
+    font-size: 18px;
+    font-family: 'Crimson Pro', serif;
+    margin-top: 50px; }
+  .generaciones div a {
+    padding: 10px 20px; }
+  .mantel-banner div {
+    height: 60px; }
+  .favoritas h2 {
+    font-size: 30px; }
+  .favoritas-item {
+    width: 400px;
+    height: 250px; }
+  .ver-mas a {
+    padding: 10px 20px; }
+  .maquina-pasta img {
+    height: 250px; }
+  .whatsapp-flotante img {
+    width: 68px;
+    height: 68px; }
+  .variedades .grid-menu {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 10, 10%;
+    grid-template-areas: "texto1"  "imagen1" "texto2" "imagen2" "texto3" "imagen3" "texto4" "imagen4" "texto5" "imagen5"; }
+  .variedades .grid-menu .texto-fideos {
+    height: 220px; }
+  .variedades .grid-menu .texto-noquis {
+    height: 180px;
+    background-color: rgba(255, 219, 87, 0.182); }
+  .variedades .grid-menu .texto-lasagna {
+    height: 180px;
+    background-color: rgba(255, 219, 87, 0.182); }
+  .variedades .grid-menu .texto-ravioles {
+    height: 180px;
+    background-color: rgba(173, 20, 23, 0.101); }
+  .variedades .grid-menu .texto-canelones {
+    height: 180px;
+    background-color: rgba(173, 20, 23, 0.101); }
+  .variedades .grid-menu .imagen-fideos {
+    height: 180px; }
+  .variedades .grid-menu .imagen-ravioles {
+    height: 180px; }
+  .variedades .grid-menu .imagen-noquis {
+    height: 180px; }
+  .variedades .grid-menu .imagen-canelones {
+    height: 180px; }
+  .variedades .grid-menu .imagen-lasagna {
+    height: 180px; }
+  .variedades .grid-menu .imagen-fideos .fideos1 {
+    display: none; }
+  .variedades .grid-menu .imagen-fideos .fideos2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; } }
+
+@media screen and (max-width: 554px) {
+  .historia-y-mision .mision {
+    height: 450px; }
+  .historia-y-mision .mision h2 {
+    font-size: 25px; }
+  .historia-y-mision .mision .la-mejor-calidad {
+    font-size: 16px; }
+  .historia-y-mision .mision .cada-pasta-fresca {
+    font-size: 16px;
+    margin-bottom: 60px; } }
+
+@media screen and (max-width: 517px) {
+  .historia-y-mision .mision {
+    height: auto; }
+  .historia-y-mision .mision h2 {
+    margin-top: 60px; } }
+
+@media screen and (max-width: 500px) {
+  .hero {
+    justify-content: center;
+    align-items: center; }
+  .hero h1 {
+    font-size: 40px; }
+  .hero h2 {
+    font-size: 40px; }
+  .frescos-tradicionales .frescos-texto img {
+    width: 90px;
+    height: 110px; }
+  .frescos-tradicionales .frescos-texto p {
+    font-size: 25px; }
+  .frescos-tradicionales .tradicionales-texto {
+    padding-bottom: 42px; }
+  .frescos-tradicionales .tradicionales-texto img {
+    width: 90px;
+    height: 90px; }
+  .frescos-tradicionales .tradicionales-texto p {
+    font-size: 25px; }
+  .maquina-pasta img {
+    height: 200px; }
+  .variedades h1 {
+    font-size: 30px; }
+  .historia-y-mision h1 {
+    font-size: 30px; }
+  .locales h1 {
+    font-size: 30px; }
+  .contacto h1 {
+    font-size: 30px; }
+  .whatsapp-flotante img {
+    width: 58px;
+    height: 58px; } }
+
+@media screen and (max-width: 460px) {
+  .variedades h1 {
+    font-size: 28px; }
+  .favoritas-item {
+    width: 300px;
+    height: 200px; }
+  .pie-de-foto {
+    font-size: 16px; }
+  .historia-y-mision h1 {
+    font-size: 28px; }
+  .locales h1 {
+    font-size: 28px; }
+  .locales .tarjetas .villa-urquiza {
+    width: 80%; }
+  .locales .tarjetas .vicente-lopez {
+    width: 80%; }
+  .locales .tarjetas .villa-urquiza h2 {
+    font-size: 25px; }
+  .locales .tarjetas .vicente-lopez h2 {
+    font-size: 25px; }
+  .locales .tarjetas .villa-urquiza iframe {
+    height: 200px; }
+  .locales .tarjetas .vicente-lopez iframe {
+    height: 200px; }
+  .contacto h1 {
+    font-size: 28px; } }
+
+@media screen and (max-width: 440px) {
+  .frescas-artesanales h2 {
+    font-size: 14px; }
+  .frescas-artesanales img {
+    width: 20px;
+    height: 20px; } }
+
+@media screen and (max-width: 425px) {
+  .hero h1 {
+    margin-bottom: 0px; } }
+
+@media screen and (max-width: 400px) {
+  .logo-header {
+    width: 150px;
+    height: 55px; }
+  .enlaces-nav {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 2px; }
+  .generaciones div h2 {
+    font-size: 25px; }
+  .mantel-banner div {
+    height: 45px; }
+  .favoritas h2 {
+    font-size: 25px;
+    margin-bottom: 40px; }
+  .frescos-tradicionales {
+    justify-content: center; }
+  .frescos-texto img {
+    width: 80px;
+    height: 100px; }
+  .frescos-texto p {
+    font-size: 20px; }
+  .tradicionales-texto img {
+    width: 80px;
+    height: 80px; }
+  .tradicionales-texto p {
+    font-size: 20px; }
+  .maquina-pasta img {
+    height: 150px; }
+  .variedades h1 {
+    font-size: 24px; }
+  .variedades .grid-menu .texto-fideos h2 {
+    font-size: 20px; }
+  .variedades .grid-menu .texto-ravioles h2 {
+    font-size: 20px; }
+  .variedades .grid-menu .texto-noquis h2 {
+    font-size: 20px; }
+  .variedades .grid-menu .texto-canelones h2 {
+    font-size: 20px; }
+  .variedades .grid-menu .texto-lasagna h2 {
+    font-size: 20px; }
+  .historia-y-mision h1 {
+    font-size: 22px; }
+  .historia-y-mision .mision h2 {
+    font-size: 20px; }
+  .historia-y-mision .mision .la-mejor-calidad {
+    font-size: 15px; }
+  .historia-y-mision .mision .cada-pasta-fresca {
+    font-size: 15px; }
+  .locales h1 {
+    font-size: 24px; }
+  .locales .tarjetas .villa-urquiza iframe {
+    height: 150px; }
+  .locales .tarjetas .vicente-lopez iframe {
+    height: 150px; }
+  .contacto h1 {
+    font-size: 22px; }
+  footer .logo-footer img {
+    width: 208px;
+    height: 79px; }
+  footer .comunicate h3 {
+    font-size: 18px; }
+  footer .comunicate .whatsapp p {
+    font-size: 13px; }
+  footer.comunicate .mail p {
+    font-size: 13px; }
+  footer.comunicate .whatsapp img {
+    width: 20px;
+    height: 20px; }
+  footer.comunicate .mail img {
+    width: 23px;
+    height: 16px; }
+  footer .seguinos {
+    width: 260px; }
+  footer .seguinos h3 {
+    font-size: 18px; }
+  footer .seguinos .redes {
+    width: 260px; }
+  .whatsapp-flotante img {
+    width: 48px;
+    height: 48px; } }

@@ -1,0 +1,784 @@
+/*-----INDEX------*/
+
+.hero{
+    max-width: 100%;
+    height: 80vh;    
+    text-align: left;
+    background-image: url("../img/elplacerdedisfrutar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    h1{
+        color: #E9AB33;
+        font-size: 70px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        margin-bottom: 30px;
+        margin-left: 50px;    
+    }
+    h2{
+        color: #84BC82;
+        font-size: 70px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        margin-bottom: 80px;
+        margin-left: 50px;
+    }
+    div{
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            background-color: #FFDA57;
+            padding: 10px 40px 10px 40px;
+            margin-left: 50px;
+            border-radius: 18px;
+            &:hover{
+                background-color: #FFE792;
+            }
+            &:active{
+                background-color: #FFDA57;
+            }
+        }
+    }
+}
+
+/*---seccion frescas, artesanales, deliciosas---*/
+
+.frescas-artesanales{
+    background-color: rgb(173,20,23); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        color: white;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        padding: 45px 100px 45px 100px;
+        margin: 0;
+    }
+}
+
+/*----sección tres generaciones----*/
+
+.generaciones{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-image: url("../img/generaciones.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        h2{
+            color: white;
+            font-size: 59px;
+            font-family: 'Kaushan Script', cursive;
+        }
+        p{
+            color: white;
+            font-size: 33px;
+            font-family: 'Crimson Pro', serif;
+            margin-top: 50px;
+        }
+        .recetas-de-familia{
+            margin-bottom: 100px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            background-color: rgba(255, 255, 255, 0.774);
+            padding: 10px 40px 10px 40px;
+            border-radius: 18px;
+            &:hover{
+                background-color: white;
+            }
+        }
+    }
+}
+
+
+/*----banner mantel----*/
+
+.mantel-banner{
+    div{
+        width: 100%;
+        height: 150px;
+        img{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            object-fit: cover;
+        }
+    }
+}
+
+/*----sección las favoritas----*/
+
+.favoritas{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    h2{
+        font-size: 55px;
+        font-family: sans-serif;
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 700;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .ver-mas{
+        margin: 50px;
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            background-color: rgb(255, 219, 87);
+            padding: 10px 40px 10px 40px;
+            border-radius: 18px;
+            &:hover{
+                background-color: rgba(255, 219, 87, 0.625);
+            }
+            &:active{
+                background-color: #84BC82;
+            }
+        }
+    }
+}
+
+/*----sección frescos y tradicionales----*/
+
+.frescos-tradicionales{
+    width: 100%;
+    height: 998px;
+    background-color: rgb(173,20,23);    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "frescos-texto frescos-imagen"
+        "tradicionales-imagen tradicionales-texto";
+    .frescos-texto{
+        grid-area: frescos-texto;
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center; 
+        text-align: center;  
+        img{
+            padding-bottom: 40px;
+            width: auto;
+            height: auto;
+        }
+        p{
+            width: 400px;
+            color: white;
+            font-size: 35px;
+            font-family: sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+    .frescos-imagen{
+        grid-area: frescos-imagen;
+        img{
+            width: 100%;   
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .tradicionales-imagen{
+        grid-area: tradicionales-imagen;   
+        img{
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;            
+        }
+    }
+    .tradicionales-texto{
+        grid-area: tradicionales-texto;    
+        display: flex;
+        flex-direction: column;    
+        text-align: center;
+        justify-content: center;
+        align-items: center;  
+        img{
+            padding-bottom: 40px;
+            width: auto;
+            height: auto;
+        }
+        p{
+            color: white;
+            font-size: 35px;
+            font-family: sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
+
+/*----sección imagen maquina de pasta----*/
+
+.maquina-pasta{
+    background-color: rgb(173,20,23);
+    img{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+}
+
+
+
+/*-----PÁGINA NUESTRAS PASTAS----*/
+
+.variedades{
+    font-family: 'Montserrat', sans-serif;
+    h1{
+        text-align: center;
+        font-size: 40px;    
+        font-weight: 600;
+        margin: 40px;
+    }
+    .grid-menu{
+        width: 100%;
+        display: grid;    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat (5, 20%) ;
+        grid-template-areas: 
+            "texto1 imagen1"
+            "imagen2 texto2"
+            "texto3 imagen3"
+            "imagen4 texto4"
+            "texto5 imagen5";
+        .texto-fideos{
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 219, 87, 0.182);
+            grid-area: texto1;
+            h2{
+                font-size: 38px;    
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+            ul{
+                font-weight: 400;
+                list-style: none;
+                margin-top: 50px;
+                margin-bottom: 0px;
+                padding-left: 0px;
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+        .imagen-fideos{
+            grid-area: imagen1;
+            .fideos1{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .fideos2{
+                display: none;
+            }
+        }
+        .imagen-ravioles{
+            grid-area: imagen2;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .texto-ravioles{
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(173, 20, 23, 0.101);
+            grid-area: texto2;
+            h2{
+                font-size: 38px;    
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+            ul{
+                font-weight: 400;
+                list-style: none;
+                margin-top: 50px;
+                margin-bottom: 0px;
+                padding-left: 0px;
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+        .texto-noquis{
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 219, 87, 0.182);
+            grid-area: texto3;
+            h2{
+                font-size: 38px;    
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+            ul{
+                font-weight: 400;
+                list-style: none;
+                margin-top: 50px;
+                margin-bottom: 0px;
+                padding-left: 0px;
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+        .imagen-noquis{
+            grid-area: imagen3;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .imagen-canelones{
+            grid-area: imagen4;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .texto-canelones{
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color:rgba(173, 20, 23, 0.101);
+            grid-area: texto4;
+            h2{
+                font-size: 38px;    
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+            ul{
+                font-weight: 400;
+                list-style: none;
+                margin-top: 50px;
+                margin-bottom: 0px;
+                padding-left: 0px;
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+        .texto-lasagna{
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 219, 87, 0.182);
+            grid-area: texto5;
+            h2{
+                font-size: 38px;    
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+            ul{
+                font-weight: 400;
+                list-style: none;
+                margin-top: 50px;
+                margin-bottom: 0px;
+                padding-left: 0px;
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+        .imagen-lasagna{
+            grid-area: imagen5;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+/*-----PÁGINA NUESTRA HISTORIA-----*/
+
+.historia-y-mision{
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        margin: 80px;
+    }
+    .historia{
+        display: flex;
+        align-items: center;
+        img{
+            width: 50%;
+            height: 550px;
+        }
+        div{
+            width: 50%;
+            margin: 40px;
+            text-align: center;
+            p{
+                font-size: 25px;
+                font-family: 'Crimson Pro', serif;  
+                font-weight: 400;
+                margin: 30px;
+                span{
+                    color: rgb(173,20,23);
+                }
+                &::selection{
+                    background-color: rgb(255, 219, 87);
+                }
+            }
+        }
+    }
+    .mision{
+        width: 100%;
+        height: 80vh;
+        margin-top: 100px;
+        text-align: center;
+        background-image: url("../img/fideos-mision.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            width: 80%;
+            color: white;
+            font-size: 45px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            margin: 40px;
+        }
+        .la-mejor-calidad{
+            width: 80%;
+            color: white;    
+            font-size: 30px;
+            font-family: 'Crimson Pro', serif;  
+            font-weight: 400;
+            margin: 20px;
+        }
+        .cada-pasta-fresca{
+            width: 80%;
+            color: white;    
+            font-size: 30px;
+            font-family: 'Crimson Pro', serif;  
+            font-weight: 400;
+            margin: 10px;
+        }
+    }
+}
+
+
+
+/*-----PÁGINA LOCALES-----*/
+
+.locales{
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        margin: 80px 20px 80px 20px;
+    }
+    .tarjetas{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-evenly;
+        .villa-urquiza{
+            margin-bottom: 150px;
+            padding: 30px;
+            background-color: rgba(173, 20, 23, 0.101);
+            box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+            -webkit-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+            -moz-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37); 
+            h2{
+                font-size: 35px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .direccion-horario{
+                display: flex;
+                flex-direction: column;    
+                align-items: center;
+                .direccion-urquiza{
+                    width: 240px;
+                    display: flex;
+                    justify-content: left;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    justify-content: space-evenly;
+                    .icono-location{
+                        width: 25px ;
+                        height: 29px;
+                    }
+                    p{
+                        font-size: 20px;
+                        font-family: 'Crimson Pro', serif;  
+                        font-weight: 400; 
+                    }
+                }
+                .horario-urquiza{
+                    width: 230px;
+                    display: flex;
+                    justify-content: left;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    justify-content: space-evenly;
+                    .icono-reloj{
+                        width: 25px;
+                        height: 25px;
+                    }
+                    p{
+                        font-size: 20px;
+                        font-family: 'Crimson Pro', serif;  
+                        font-weight: 400; 
+                    }
+                }
+            }
+            iframe{
+                width: 100%;
+            }
+        }
+        .vicente-lopez{
+            margin-bottom: 150px;
+            padding: 30px;
+            background-color: rgba(173, 20, 23, 0.101);
+            box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+            -webkit-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+            -moz-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+            h2{
+                font-size: 35px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .direccion-horario{
+                display: flex;
+                flex-direction: column;    
+                align-items: center;
+                .direccion-vlopez{
+                    width: 214px;
+                    display: flex;
+                    justify-content: left;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    justify-content: space-between;
+                    .icono-location{
+                        width: 25px ;
+                        height: 29px;
+                    }
+                    p{
+                        font-size: 20px;
+                        font-family: 'Crimson Pro', serif;  
+                        font-weight: 400;
+                    }
+                }
+                .horario-vlopez{
+                    width: 209px;
+                    display: flex;
+                    justify-content: left;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    justify-content: space-between;
+                    .icono-reloj{
+                        width: 25px;
+                        height: 25px;
+                    }
+                    p{
+                        font-size: 20px;
+                        font-family: 'Crimson Pro', serif;  
+                        font-weight: 400;
+                    }
+                }
+            }
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+    .pedidos-ya{
+        height: 91px;
+        background-color: #FFDA57; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            width: 750px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 70px;
+                margin-right: 20px;
+            }
+            p{
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+
+/*------PÁGINA CONTACTO------*/
+
+.contacto{
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        margin: 40px;
+    }
+    section{
+        .formulario{
+            display: flex;
+            flex-direction: column; 
+            max-width: 400px; 
+            margin: 0 auto; 
+            padding: 50px;
+            div{
+                display: flex;
+                flex-direction: column; 
+                margin-bottom: 20px; 
+                label{
+                    font-weight: 400; 
+                    font-family: 'Montserrat', sans-serif;
+                    margin-bottom: 5px;
+                }
+                input{
+                    padding: 5px; 
+                    border: 1px solid #ccc; 
+                    border-radius: 5px; 
+                    font-size: 16px;
+                }
+            }
+            div{
+                display: flex;
+                flex-direction: column; 
+                margin-bottom: 20px; 
+                label{
+                    font-weight: 400; 
+                    font-family: 'Montserrat', sans-serif;
+                    margin-bottom: 5px;
+                }
+                input{
+                    padding: 5px; 
+                    border: 1px solid #ccc; 
+                    border-radius: 5px; 
+                    font-size: 16px; 
+                }    
+            }
+            div{
+                display: flex;
+                flex-direction: column; 
+                margin-bottom: 20px; 
+                label{
+                    font-weight: 400; 
+                    font-family: 'Montserrat', sans-serif;
+                    margin-bottom: 5px;
+                }
+                input{
+                    padding: 5px; 
+                    border: 1px solid #ccc; 
+                    border-radius: 5px; 
+                    font-size: 16px;
+                }    
+            }
+            div{
+                display: flex;
+                flex-direction: column; 
+                margin-bottom: 20px; 
+                label{
+                    font-weight: 400; 
+                    font-family: 'Montserrat', sans-serif;
+                    margin-bottom: 5px;
+                }
+                textarea{
+                    padding: 5px; 
+                    border: 1px solid #ccc; 
+                    border-radius: 5px; 
+                    font-size: 14px; 
+                    font-family: 'Montserrat', sans-serif;
+                }    
+            }
+            .boton-enviar{
+                display: flex;
+                flex-direction: column; 
+                margin-bottom: 20px; 
+                input{
+                    background-color: rgb(255, 219, 87);
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    &:active{
+                        background-color: #84BC82;
+                    }
+                }    
+            }
+        }
+    }
+    .fideos-contacto{
+        background-color: rgb(173,20,23);
+        img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    }
+}

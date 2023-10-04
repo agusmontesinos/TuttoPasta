@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Kaushan+Script&family=Montserrat:wght@400;600;700;800&display=swap');
+
+
+/*-------RESET-------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*----BOOTSTRAP----*/
+
+/*----Carrusel favoritas----*/
+
+.favoritas-item{    
+    width: 500px;
+    height: 300px; 
+    box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+    -moz-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
+}
+
+
+/*---WHATSAPP FLOTANTE---*/
+
+.whatsapp-flotante{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
