@@ -1,5 +1,20 @@
 @charset "UTF-8";
+/*---en MAIN index---*/
+/*--lista--*/
+/*---en MAIN-INDEX-sección Tres generaciones---*/
+/*--mapa--*/
+/*---en la página NUESTRA HISTORIA-sección Misión---*/
+/*--mixin--*/
+/*---en la página LOCALES---*/
+/*--extends--*/
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Kaushan+Script&family=Montserrat:wght@400;600;700;800&display=swap");
+.locales .tarjetas .villa-urquiza .direccion-horario, .locales .tarjetas .vicente-lopez .direccion-horario {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/*---en el FOOTER---*/
+/*--operador aritmetico--*/
 /*-------RESET-------*/
 * {
   margin: 0;
@@ -48,7 +63,7 @@ header nav {
 /*-----INDEX------*/
 .hero {
   max-width: 100%;
-  height: 80vh;
+  height: calc(100vh - 101.88px);
   text-align: left;
   background-image: url("../img/elplacerdedisfrutar.jpg");
   background-size: cover;
@@ -81,14 +96,14 @@ header nav {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    background-color: #FFDA57;
+    background-color: #ffdb57;
     padding: 10px 40px 10px 40px;
     margin-left: 50px;
     border-radius: 18px; }
     .hero div a:hover {
       background-color: #FFE792; }
     .hero div a:active {
-      background-color: #FFDA57; }
+      background-color: #ffdb57; }
 
 /*---seccion frescas, artesanales, deliciosas---*/
 .frescas-artesanales {
@@ -103,7 +118,7 @@ header nav {
     font-weight: 700;
     text-align: center;
     padding: 45px 100px 45px 100px;
-    margin: 0; }
+    margin: 0px; }
 
 /*----sección tres generaciones----*/
 .generaciones {
@@ -176,9 +191,9 @@ header nav {
       padding: 10px 40px 10px 40px;
       border-radius: 18px; }
       .favoritas .ver-mas a:hover {
-        background-color: rgba(255, 219, 87, 0.625); }
+        background-color: #FFE792; }
       .favoritas .ver-mas a:active {
-        background-color: #84BC82; }
+        background-color: #ffdb57; }
 
 /*----sección frescos y tradicionales----*/
 .frescos-tradicionales {
@@ -282,19 +297,29 @@ header nav {
         .variedades .grid-menu .texto-fideos ul li {
           font-size: 20px; }
     .variedades .grid-menu .imagen-fideos {
-      grid-area: imagen1; }
+      grid-area: imagen1;
+      position: relative;
+      overflow: hidden; }
+      .variedades .grid-menu .imagen-fideos :hover {
+        transform: scale(1.1); }
       .variedades .grid-menu .imagen-fideos .fideos1 {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: transform 0.3s; }
       .variedades .grid-menu .imagen-fideos .fideos2 {
         display: none; }
     .variedades .grid-menu .imagen-ravioles {
-      grid-area: imagen2; }
+      grid-area: imagen2;
+      position: relative;
+      overflow: hidden; }
+      .variedades .grid-menu .imagen-ravioles :hover {
+        transform: scale(1.1); }
       .variedades .grid-menu .imagen-ravioles img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: transform 0.3s; }
     .variedades .grid-menu .texto-ravioles {
       text-align: left;
       display: flex;
@@ -336,17 +361,27 @@ header nav {
         .variedades .grid-menu .texto-noquis ul li {
           font-size: 20px; }
     .variedades .grid-menu .imagen-noquis {
-      grid-area: imagen3; }
+      grid-area: imagen3;
+      position: relative;
+      overflow: hidden; }
+      .variedades .grid-menu .imagen-noquis :hover {
+        transform: scale(1.1); }
       .variedades .grid-menu .imagen-noquis img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: transform 0.3s; }
     .variedades .grid-menu .imagen-canelones {
-      grid-area: imagen4; }
+      grid-area: imagen4;
+      position: relative;
+      overflow: hidden; }
+      .variedades .grid-menu .imagen-canelones :hover {
+        transform: scale(1.1); }
       .variedades .grid-menu .imagen-canelones img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: transform 0.3s; }
     .variedades .grid-menu .texto-canelones {
       text-align: left;
       display: flex;
@@ -388,11 +423,16 @@ header nav {
         .variedades .grid-menu .texto-lasagna ul li {
           font-size: 20px; }
     .variedades .grid-menu .imagen-lasagna {
-      grid-area: imagen5; }
+      grid-area: imagen5;
+      position: relative;
+      overflow: hidden; }
+      .variedades .grid-menu .imagen-lasagna :hover {
+        transform: scale(1.1); }
       .variedades .grid-menu .imagen-lasagna img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: transform 0.3s; }
 
 /*-----PÁGINA NUESTRA HISTORIA-----*/
 .historia-y-mision h1 {
@@ -483,38 +523,34 @@ header nav {
       font-weight: 600;
       margin-bottom: 40px;
       text-align: center; }
-    .locales .tarjetas .villa-urquiza .direccion-horario {
+    .locales .tarjetas .villa-urquiza .direccion-horario .direccion-urquiza {
+      width: 240px;
       display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .locales .tarjetas .villa-urquiza .direccion-horario .direccion-urquiza {
-        width: 240px;
-        display: flex;
-        justify-content: left;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        justify-content: space-evenly; }
-        .locales .tarjetas .villa-urquiza .direccion-horario .direccion-urquiza .icono-location {
-          width: 25px;
-          height: 29px; }
-        .locales .tarjetas .villa-urquiza .direccion-horario .direccion-urquiza p {
-          font-size: 20px;
-          font-family: 'Crimson Pro', serif;
-          font-weight: 400; }
-      .locales .tarjetas .villa-urquiza .direccion-horario .horario-urquiza {
-        width: 230px;
-        display: flex;
-        justify-content: left;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        justify-content: space-evenly; }
-        .locales .tarjetas .villa-urquiza .direccion-horario .horario-urquiza .icono-reloj {
-          width: 25px;
-          height: 25px; }
-        .locales .tarjetas .villa-urquiza .direccion-horario .horario-urquiza p {
-          font-size: 20px;
-          font-family: 'Crimson Pro', serif;
-          font-weight: 400; }
+      justify-content: left;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      justify-content: space-evenly; }
+      .locales .tarjetas .villa-urquiza .direccion-horario .direccion-urquiza .icono-location {
+        width: 25px;
+        height: 29px; }
+      .locales .tarjetas .villa-urquiza .direccion-horario .direccion-urquiza p {
+        font-size: 20px;
+        font-family: 'Crimson Pro', serif;
+        font-weight: 400; }
+    .locales .tarjetas .villa-urquiza .direccion-horario .horario-urquiza {
+      width: 230px;
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      justify-content: space-evenly; }
+      .locales .tarjetas .villa-urquiza .direccion-horario .horario-urquiza .icono-reloj {
+        width: 25px;
+        height: 25px; }
+      .locales .tarjetas .villa-urquiza .direccion-horario .horario-urquiza p {
+        font-size: 20px;
+        font-family: 'Crimson Pro', serif;
+        font-weight: 400; }
     .locales .tarjetas .villa-urquiza iframe {
       width: 100%; }
   .locales .tarjetas .vicente-lopez {
@@ -530,38 +566,34 @@ header nav {
       font-weight: 600;
       margin-bottom: 40px;
       text-align: center; }
-    .locales .tarjetas .vicente-lopez .direccion-horario {
+    .locales .tarjetas .vicente-lopez .direccion-horario .direccion-vlopez {
+      width: 214px;
       display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .locales .tarjetas .vicente-lopez .direccion-horario .direccion-vlopez {
-        width: 214px;
-        display: flex;
-        justify-content: left;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        justify-content: space-between; }
-        .locales .tarjetas .vicente-lopez .direccion-horario .direccion-vlopez .icono-location {
-          width: 25px;
-          height: 29px; }
-        .locales .tarjetas .vicente-lopez .direccion-horario .direccion-vlopez p {
-          font-size: 20px;
-          font-family: 'Crimson Pro', serif;
-          font-weight: 400; }
-      .locales .tarjetas .vicente-lopez .direccion-horario .horario-vlopez {
-        width: 209px;
-        display: flex;
-        justify-content: left;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        justify-content: space-between; }
-        .locales .tarjetas .vicente-lopez .direccion-horario .horario-vlopez .icono-reloj {
-          width: 25px;
-          height: 25px; }
-        .locales .tarjetas .vicente-lopez .direccion-horario .horario-vlopez p {
-          font-size: 20px;
-          font-family: 'Crimson Pro', serif;
-          font-weight: 400; }
+      justify-content: left;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      justify-content: space-between; }
+      .locales .tarjetas .vicente-lopez .direccion-horario .direccion-vlopez .icono-location {
+        width: 25px;
+        height: 29px; }
+      .locales .tarjetas .vicente-lopez .direccion-horario .direccion-vlopez p {
+        font-size: 20px;
+        font-family: 'Crimson Pro', serif;
+        font-weight: 400; }
+    .locales .tarjetas .vicente-lopez .direccion-horario .horario-vlopez {
+      width: 209px;
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      justify-content: space-between; }
+      .locales .tarjetas .vicente-lopez .direccion-horario .horario-vlopez .icono-reloj {
+        width: 25px;
+        height: 25px; }
+      .locales .tarjetas .vicente-lopez .direccion-horario .horario-vlopez p {
+        font-size: 20px;
+        font-family: 'Crimson Pro', serif;
+        font-weight: 400; }
     .locales .tarjetas .vicente-lopez iframe {
       width: 100%; }
 

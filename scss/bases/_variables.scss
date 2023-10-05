@@ -1,0 +1,42 @@
+/*---en MAIN index---*/
+/*--lista--*/
+
+$colores: rgb(173,20,23), rgb(255, 219, 87), white, black;
+
+
+
+/*---en MAIN-INDEX-sección Tres generaciones---*/
+/*--mapa--*/
+
+$boton:(
+    color-texto: black,
+    fondo: rgba(255, 255, 255, 0.774),
+);
+
+
+/*---en la página NUESTRA HISTORIA-sección Misión---*/
+/*--mixin--*/
+
+@mixin flex ($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+/*---en la página LOCALES---*/
+/*--extends--*/
+
+%flex-center{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+};
+
+
+/*---en el FOOTER---*/
+/*--operador aritmetico--*/
+$ancho: 500px;
+
+
