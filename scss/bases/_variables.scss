@@ -1,21 +1,25 @@
-/*---en MAIN index---*/
-/*--lista--*/
+/*---VARIABLES---*/
 
-$colores: rgb(173,20,23), rgb(255, 219, 87), white, black;
+$color-primario: rgb(173,20,23);
+$color-secundario: white;
 
 
+/*---LISTA---*/
 
-/*---en MAIN-INDEX-sección Tres generaciones---*/
-/*--mapa--*/
+$colores: #E9AB33, rgb(255, 219, 87), white, black, #84BC82;
+
+
+/*---MAPA---*/
 
 $boton:(
     color-texto: black,
-    fondo: rgba(255, 255, 255, 0.774),
+    fondo: rgb(255, 219, 87),
+    fondo-hover: #FFE792,
+    fondo-active: rgb(255, 219, 87),
 );
 
 
-/*---en la página NUESTRA HISTORIA-sección Misión---*/
-/*--mixin--*/
+/*---MIXIN---*/
 
 @mixin flex ($flex, $direction, $justify, $align){
     display: $flex;
@@ -25,18 +29,19 @@ $boton:(
 }
 
 
-/*---en la página LOCALES---*/
-/*--extends--*/
+/*---EXTENDS---*/
 
 %flex-center{
     display: flex;    
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 };
 
 
-/*---en el FOOTER---*/
-/*--operador aritmetico--*/
+
+/*---OPERADOR ARITMÉTICO---*/
+
 $ancho: 500px;
 
 

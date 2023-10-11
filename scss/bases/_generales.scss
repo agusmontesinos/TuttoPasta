@@ -20,6 +20,9 @@
     -moz-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
 }
 
+.caption-favoritas{
+    font-size: 20px;
+}
 
 /*---WHATSAPP FLOTANTE---*/
 
@@ -27,4 +30,12 @@
     position: fixed;
     right: 50px;
     bottom: 50px;
+    &:hover{
+        transform: scale(1.1);
+    }
+    a{
+        img{
+            transition: transform 0.3s;
+        }
+    }
 }

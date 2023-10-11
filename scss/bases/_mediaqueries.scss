@@ -184,13 +184,6 @@
         font-size: 20px;
     }
 
-    footer .comunicate .whatsapp p{
-        font-size: 15px;
-    }
-    
-    footer .comunicate .mail p{
-        font-size: 15px;
-    }
     
     footer .comunicate .whatsapp{
         width: auto;
@@ -201,6 +194,10 @@
         height: 22px;
     }
 
+    footer .comunicate .whatsapp p{
+        font-size: 15px;
+    }
+
     footer .comunicate .mail{
         width: auto;
     }
@@ -208,6 +205,10 @@
     footer .comunicate .mail img{
         width: 25px;
         height: 20px;
+    }
+
+    footer .comunicate .mail p{
+        font-size: 15px;
     }
 
     footer .seguinos{
@@ -820,7 +821,11 @@
         height: 250px; 
     }
 
-    .ver-mas a{
+    .caption-favoritas{
+        font-size: 17px;
+    }
+
+    .favoritas .ver-mas a{
         padding: 10px 20px; 
     }
 
@@ -1183,15 +1188,7 @@
         font-size: 20px;
     }
     
-    .historia-y-mision .mision .la-mejor-calidad{
-        font-size: 15px;
-    }
-
-    .historia-y-mision .mision .cada-pasta-fresca{
-        font-size: 15px;
-    }
-
-
+    
 
     .locales h1{
         font-size: 24px;

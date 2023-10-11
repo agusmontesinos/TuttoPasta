@@ -1,6 +1,6 @@
 footer{
     height: 350px;
-    background-color: rgb(173,20,23);
+    background-color: $color-primario;
     display: flex;
     justify-content: space-evenly; 
     .logo-footer{
@@ -14,7 +14,7 @@ footer{
         justify-content: left; 
         margin-top: 100px;
         h3{
-            color: white;
+            color: $color-secundario;
             font-size: 22px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
@@ -30,7 +30,7 @@ footer{
                 height: 33px;
             }
             p{
-                color: white;
+                color: $color-secundario;
                 font-size: 20px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 400;
@@ -46,7 +46,7 @@ footer{
                 height: 30px;
             }
             p{
-                color: white;
+                color: $color-secundario;
                 font-size: 20px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 400;
@@ -61,7 +61,7 @@ footer{
         justify-content: left; 
         margin-top: 100px;
         h3{
-            color: white;
+            color: $color-secundario;
             font-size: 22px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
@@ -72,7 +72,7 @@ footer{
             margin-top: 30px;
             .icono-redes{
                 font-size: 50px;
-                color: black;
+                color: nth($colores, 4);
             }
         }
     }

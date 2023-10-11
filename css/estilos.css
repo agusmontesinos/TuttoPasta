@@ -1,20 +1,17 @@
 @charset "UTF-8";
-/*---en MAIN index---*/
-/*--lista--*/
-/*---en MAIN-INDEX-sección Tres generaciones---*/
-/*--mapa--*/
-/*---en la página NUESTRA HISTORIA-sección Misión---*/
-/*--mixin--*/
-/*---en la página LOCALES---*/
-/*--extends--*/
+/*---VARIABLES---*/
+/*---LISTA---*/
+/*---MAPA---*/
+/*---MIXIN---*/
+/*---EXTENDS---*/
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Kaushan+Script&family=Montserrat:wght@400;600;700;800&display=swap");
-.locales .tarjetas .villa-urquiza .direccion-horario, .locales .tarjetas .vicente-lopez .direccion-horario {
+.generaciones, .frescos-tradicionales .frescos-texto, .frescos-tradicionales .tradicionales-texto, .variedades .grid-menu .texto-fideos, .variedades .grid-menu .texto-ravioles, .variedades .grid-menu .texto-noquis, .variedades .grid-menu .texto-canelones, .variedades .grid-menu .texto-lasagna, .historia-y-mision .mision, .locales .tarjetas .villa-urquiza .direccion-horario, .locales .tarjetas .vicente-lopez .direccion-horario {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center; }
 
-/*---en el FOOTER---*/
-/*--operador aritmetico--*/
+/*---OPERADOR ARITMÉTICO---*/
 /*-------RESET-------*/
 * {
   margin: 0;
@@ -29,11 +26,18 @@
   -webkit-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37);
   -moz-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37); }
 
+.caption-favoritas {
+  font-size: 20px; }
+
 /*---WHATSAPP FLOTANTE---*/
 .whatsapp-flotante {
   position: fixed;
   right: 50px;
   bottom: 50px; }
+  .whatsapp-flotante:hover {
+    transform: scale(1.1); }
+  .whatsapp-flotante a img {
+    transition: transform 0.3s; }
 
 /*-------HEADER------*/
 header {
@@ -73,6 +77,7 @@ header nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: left;
   padding: 60px; }
   .hero h1 {
     color: #E9AB33;
@@ -109,6 +114,7 @@ header nav {
 .frescas-artesanales {
   background-color: #ad1417;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center; }
   .frescas-artesanales h2 {
@@ -129,10 +135,7 @@ header nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-attachment: fixed; }
   .generaciones div h2 {
     color: white;
     font-size: 59px;
@@ -206,10 +209,6 @@ header nav {
   grid-template-areas: "frescos-texto frescos-imagen" "tradicionales-imagen tradicionales-texto"; }
   .frescos-tradicionales .frescos-texto {
     grid-area: frescos-texto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center; }
     .frescos-tradicionales .frescos-texto img {
       padding-bottom: 40px;
@@ -237,11 +236,7 @@ header nav {
       object-fit: cover; }
   .frescos-tradicionales .tradicionales-texto {
     grid-area: tradicionales-texto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center; }
+    text-align: center; }
     .frescos-tradicionales .tradicionales-texto img {
       padding-bottom: 40px;
       width: auto;
@@ -278,10 +273,6 @@ header nav {
     grid-template-areas: "texto1 imagen1" "imagen2 texto2" "texto3 imagen3" "imagen4 texto4" "texto5 imagen5"; }
     .variedades .grid-menu .texto-fideos {
       text-align: left;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       background-color: rgba(255, 219, 87, 0.182);
       grid-area: texto1; }
       .variedades .grid-menu .texto-fideos h2 {
@@ -322,10 +313,6 @@ header nav {
         transition: transform 0.3s; }
     .variedades .grid-menu .texto-ravioles {
       text-align: left;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       background-color: rgba(173, 20, 23, 0.101);
       grid-area: texto2; }
       .variedades .grid-menu .texto-ravioles h2 {
@@ -342,10 +329,6 @@ header nav {
           font-size: 20px; }
     .variedades .grid-menu .texto-noquis {
       text-align: left;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       background-color: rgba(255, 219, 87, 0.182);
       grid-area: texto3; }
       .variedades .grid-menu .texto-noquis h2 {
@@ -384,10 +367,6 @@ header nav {
         transition: transform 0.3s; }
     .variedades .grid-menu .texto-canelones {
       text-align: left;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       background-color: rgba(173, 20, 23, 0.101);
       grid-area: texto4; }
       .variedades .grid-menu .texto-canelones h2 {
@@ -404,10 +383,6 @@ header nav {
           font-size: 20px; }
     .variedades .grid-menu .texto-lasagna {
       text-align: left;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       background-color: rgba(255, 219, 87, 0.182);
       grid-area: texto5; }
       .variedades .grid-menu .texto-lasagna h2 {
@@ -471,11 +446,7 @@ header nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background-attachment: fixed; }
   .historia-y-mision .mision h2 {
     width: 80%;
     color: white;
@@ -599,16 +570,17 @@ header nav {
 
 .locales .pedidos-ya {
   height: 91px;
-  background-color: #FFDA57;
+  background-color: #ffdb57;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
   .locales .pedidos-ya div {
     width: 750px;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    justify-content: center; }
+    align-items: center; }
     .locales .pedidos-ya div img {
       width: 70px;
       margin-right: 20px; }
@@ -643,7 +615,7 @@ header nav {
       margin-bottom: 5px; }
     .contacto section .formulario div input {
       padding: 5px;
-      border: 1px solid #ccc;
+      border: 1px solid #dcdcdc;
       border-radius: 5px;
       font-size: 16px; }
   .contacto section .formulario div {
@@ -656,7 +628,7 @@ header nav {
       margin-bottom: 5px; }
     .contacto section .formulario div input {
       padding: 5px;
-      border: 1px solid #ccc;
+      border: 1px solid #dcdcdc;
       border-radius: 5px;
       font-size: 16px; }
   .contacto section .formulario div {
@@ -669,7 +641,7 @@ header nav {
       margin-bottom: 5px; }
     .contacto section .formulario div input {
       padding: 5px;
-      border: 1px solid #ccc;
+      border: 1px solid #dcdcdc;
       border-radius: 5px;
       font-size: 16px; }
   .contacto section .formulario div {
@@ -682,7 +654,7 @@ header nav {
       margin-bottom: 5px; }
     .contacto section .formulario div textarea {
       padding: 5px;
-      border: 1px solid #ccc;
+      border: 1px solid #dcdcdc;
       border-radius: 5px;
       font-size: 14px;
       font-family: 'Montserrat', sans-serif; }
@@ -861,20 +833,20 @@ footer {
     width: auto; }
   footer .comunicate h3 {
     font-size: 20px; }
-  footer .comunicate .whatsapp p {
-    font-size: 15px; }
-  footer .comunicate .mail p {
-    font-size: 15px; }
   footer .comunicate .whatsapp {
     width: auto; }
   footer .comunicate .whatsapp img {
     width: 22px;
     height: 22px; }
+  footer .comunicate .whatsapp p {
+    font-size: 15px; }
   footer .comunicate .mail {
     width: auto; }
   footer .comunicate .mail img {
     width: 25px;
     height: 20px; }
+  footer .comunicate .mail p {
+    font-size: 15px; }
   footer .seguinos {
     width: auto; }
   footer .seguinos h3 {
@@ -1179,7 +1151,9 @@ footer {
   .favoritas-item {
     width: 400px;
     height: 250px; }
-  .ver-mas a {
+  .caption-favoritas {
+    font-size: 17px; }
+  .favoritas .ver-mas a {
     padding: 10px 20px; }
   .maquina-pasta img {
     height: 250px; }
@@ -1356,10 +1330,6 @@ footer {
     font-size: 22px; }
   .historia-y-mision .mision h2 {
     font-size: 20px; }
-  .historia-y-mision .mision .la-mejor-calidad {
-    font-size: 15px; }
-  .historia-y-mision .mision .cada-pasta-fresca {
-    font-size: 15px; }
   .locales h1 {
     font-size: 24px; }
   .locales .tarjetas .villa-urquiza iframe {

@@ -9,12 +9,10 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex (flex, column, center, left);
     padding: 60px;
     h1{
-        color: #E9AB33;
+        color: nth($colores, 1);
         font-size: 70px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
@@ -23,7 +21,7 @@
         margin-left: 50px;    
     }
     h2{
-        color: #84BC82;
+        color: nth($colores, 5);
         font-size: 70px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
@@ -33,20 +31,20 @@
     }
     div{
         a{
-            color: nth($colores, 4);
+            color: map-get($boton, color-texto);
             text-decoration: none;
             font-size: 20px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
-            background-color: nth($colores, 2);
+            background-color: map-get($boton, fondo);
             padding: 10px 40px 10px 40px;
             margin-left: 50px;
             border-radius: 18px;
             &:hover{
-                background-color: #FFE792;
+                background-color: map-get($boton, fondo-hover);
             }
             &:active{
-                background-color: nth($colores, 2);
+                background-color: map-get($boton, fondo-active);
             }
         }
     }
@@ -55,12 +53,10 @@
 /*---seccion frescas, artesanales, deliciosas---*/
 
 .frescas-artesanales{
-    background-color: nth($colores, 1); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: $color-primario; 
+    @include flex (flex, row, space-between, center);
     h2{
-        color: white;
+        color: $color-secundario;
         font-size: 40px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
@@ -81,9 +77,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     div{
         h2{
             color: nth($colores, 3);
@@ -100,12 +94,12 @@
             margin-bottom: 100px;
         }
         a{
-            color: map-get($boton, color-texto);
+            color: nth($colores, 4);
             text-decoration: none;
             font-size: 20px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
-            background-color: map-get($boton, fondo);
+            background-color: rgba(255, 255, 255, 0.774);
             padding: 10px 40px 10px 40px;
             border-radius: 18px;
             &:hover{
@@ -149,19 +143,19 @@
     .ver-mas{
         margin: 50px;
         a{
-            color: black;
+            color: map-get($boton, color-texto);
             text-decoration: none;
             font-size: 20px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
-            background-color: nth($colores, 2);
+            background-color: map-get($boton, fondo);
             padding: 10px 40px 10px 40px;
             border-radius: 18px;
             &:hover{
-                background-color: #FFE792
+                background-color: map-get($boton, fondo-hover);
             }
             &:active{
-                background-color: nth($colores, 2);
+                background-color: map-get($boton, fondo-active);
             }
         }
     }
@@ -172,7 +166,7 @@
 .frescos-tradicionales{
     width: 100%;
     height: 998px;
-    background-color: nth($colores, 1);    
+    background-color: $color-primario;    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50% 50%;
@@ -181,10 +175,7 @@
         "tradicionales-imagen tradicionales-texto";
     .frescos-texto{
         grid-area: frescos-texto;
-        display: flex;
-        flex-direction: column;    
-        justify-content: center;
-        align-items: center; 
+        @extend %flex-center;
         text-align: center;  
         img{
             padding-bottom: 40px;
@@ -193,7 +184,7 @@
         }
         p{
             width: 400px;
-            color: nth($colores, 3);
+            color: $color-secundario;
             font-size: 35px;
             font-family: sans-serif;
             font-family: 'Montserrat', sans-serif;
@@ -218,19 +209,17 @@
         }
     }
     .tradicionales-texto{
-        grid-area: tradicionales-texto;    
-        display: flex;
-        flex-direction: column;    
+        grid-area: tradicionales-texto;  
+        @extend %flex-center;  
         text-align: center;
-        justify-content: center;
-        align-items: center;  
+
         img{
             padding-bottom: 40px;
             width: auto;
             height: auto;
         }
         p{
-            color: nth($colores, 3);
+            color: $color-secundario;
             font-size: 35px;
             font-family: sans-serif;
             font-family: 'Montserrat', sans-serif;
@@ -243,7 +232,7 @@
 /*----sección imagen maquina de pasta----*/
 
 .maquina-pasta{
-    background-color:nth($colores, 1);
+    background-color: $color-primario;
     img{
         width: 100%;
         height: 80vh;
@@ -276,10 +265,7 @@
             "texto5 imagen5";
         .texto-fideos{
             text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @extend %flex-center;
             background-color: rgba(255, 219, 87, 0.182);
             grid-area: texto1;
             h2{
@@ -331,10 +317,7 @@
         }
         .texto-ravioles{
             text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @extend %flex-center;
             background-color: rgba(173, 20, 23, 0.101);
             grid-area: texto2;
             h2{
@@ -355,10 +338,7 @@
         }
         .texto-noquis{
             text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @extend %flex-center;
             background-color: rgba(255, 219, 87, 0.182);
             grid-area: texto3;
             h2{
@@ -407,10 +387,7 @@
         }
         .texto-canelones{
             text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @extend %flex-center;
             background-color:rgba(173, 20, 23, 0.101);
             grid-area: texto4;
             h2{
@@ -431,10 +408,7 @@
         }
         .texto-lasagna{
             text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @extend %flex-center;
             background-color: rgba(255, 219, 87, 0.182);
             grid-area: texto5;
             h2{
@@ -498,7 +472,7 @@
                 font-weight: 400;
                 margin: 30px;
                 span{
-                    color: rgb(173,20,23);
+                    color: $color-primario;
                 }
                 &::selection{
                     background-color: rgb(255, 219, 87);
@@ -516,7 +490,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        @include flex (flex, column, center, center);
+        @extend %flex-center;
         h2{
             width: 80%;
             color: white;
@@ -673,16 +647,11 @@
     }
     .pedidos-ya{
         height: 91px;
-        background-color: #FFDA57; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-color: nth($colores, 2); 
+        @include flex (flex, row, center, center);
         div{
             width: 750px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            justify-content: center;
+            @include flex (flex, row, space-evenly, center);
             img{
                 width: 70px;
                 margin-right: 20px;
@@ -727,7 +696,7 @@
                 }
                 input{
                     padding: 5px; 
-                    border: 1px solid #ccc; 
+                    border: 1px solid #dcdcdc; 
                     border-radius: 5px; 
                     font-size: 16px;
                 }
@@ -743,7 +712,7 @@
                 }
                 input{
                     padding: 5px; 
-                    border: 1px solid #ccc; 
+                    border: 1px solid #dcdcdc; 
                     border-radius: 5px; 
                     font-size: 16px; 
                 }    
@@ -759,7 +728,7 @@
                 }
                 input{
                     padding: 5px; 
-                    border: 1px solid #ccc; 
+                    border: 1px solid #dcdcdc; 
                     border-radius: 5px; 
                     font-size: 16px;
                 }    
@@ -775,7 +744,7 @@
                 }
                 textarea{
                     padding: 5px; 
-                    border: 1px solid #ccc; 
+                    border: 1px solid #dcdcdc; 
                     border-radius: 5px; 
                     font-size: 14px; 
                     font-family: 'Montserrat', sans-serif;
@@ -786,7 +755,7 @@
                 flex-direction: column; 
                 margin-bottom: 20px; 
                 input{
-                    background-color: rgb(255, 219, 87);
+                    background-color: nth($colores, 2);
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 600;
                     &:active{
@@ -797,7 +766,7 @@
         }
     }
     .fideos-contacto{
-        background-color: rgb(173,20,23);
+        background-color: $color-primario;
         img{
             width: 100%;
             height: 250px;
