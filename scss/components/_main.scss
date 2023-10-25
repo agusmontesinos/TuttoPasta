@@ -89,6 +89,7 @@
             font-size: 33px;
             font-family: 'Crimson Pro', serif;
             margin-top: 50px;
+            margin-bottom: 0px;
         }
         .recetas-de-familia{
             margin-bottom: 100px;
@@ -141,7 +142,8 @@
         margin-bottom: 50px;
     }
     .ver-mas{
-        margin: 50px;
+        margin-top: 50px;
+        margin-bottom: 80px;
         a{
             color: map-get($boton, color-texto);
             text-decoration: none;
@@ -250,7 +252,8 @@
         text-align: center;
         font-size: 40px;    
         font-weight: 600;
-        margin: 40px;
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
     .grid-menu{
         width: 100%;
@@ -453,7 +456,7 @@
         font-size: 40px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
-        margin: 80px;
+        margin: 80px 30px 80px 30px;
     }
     .historia{
         display: flex;
@@ -537,7 +540,9 @@
         .villa-urquiza{
             margin-bottom: 150px;
             padding: 30px;
-            background-color: rgba(173, 20, 23, 0.101);
+            border: 6px solid rgb(173,20,23);
+            border-radius: 10px;
+            background-color: white;
             box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
             -webkit-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
             -moz-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37); 
@@ -547,6 +552,7 @@
                 font-weight: 600;
                 margin-bottom: 40px;
                 text-align: center;
+                color: rgb(173,20,23)
             }
             .direccion-horario{
                 @extend %flex-center;
@@ -586,13 +592,15 @@
                 }
             }
             iframe{
-                width: 100%;
+                width: 100%;                
             }
         }
         .vicente-lopez{
             margin-bottom: 150px;
             padding: 30px;
-            background-color: rgba(173, 20, 23, 0.101);
+            border: 6px solid rgb(173,20,23);
+            border-radius: 10px;
+            background-color: white;
             box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
             -webkit-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
             -moz-box-shadow: 9px 9px 11px -5px rgba(0,0,0,0.37);
@@ -602,6 +610,7 @@
                 font-weight: 600;
                 margin-bottom: 40px;
                 text-align: center;
+                color: rgb(173,20,23)
             }
             .direccion-horario{
                 @extend %flex-center;
@@ -676,7 +685,7 @@
         font-size: 40px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
-        margin: 40px;
+        margin-top: 80px;
     }
     section{
         .formulario{
@@ -758,6 +767,7 @@
                     background-color: nth($colores, 2);
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 600;
+                    border: 1px solid rgb(255, 219, 87);
                     &:active{
                         background-color: #84BC82;
                     }

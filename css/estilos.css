@@ -144,7 +144,8 @@ header nav {
     color: white;
     font-size: 33px;
     font-family: 'Crimson Pro', serif;
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-bottom: 0px; }
   .generaciones div .recetas-de-familia {
     margin-bottom: 100px; }
   .generaciones div a {
@@ -183,7 +184,8 @@ header nav {
     margin-top: 50px;
     margin-bottom: 50px; }
   .favoritas .ver-mas {
-    margin: 50px; }
+    margin-top: 50px;
+    margin-bottom: 80px; }
     .favoritas .ver-mas a {
       color: black;
       text-decoration: none;
@@ -264,7 +266,8 @@ header nav {
     text-align: center;
     font-size: 40px;
     font-weight: 600;
-    margin: 40px; }
+    margin-top: 80px;
+    margin-bottom: 80px; }
   .variedades .grid-menu {
     width: 100%;
     display: grid;
@@ -415,7 +418,7 @@ header nav {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  margin: 80px; }
+  margin: 80px 30px 80px 30px; }
 
 .historia-y-mision .historia {
   display: flex;
@@ -484,7 +487,9 @@ header nav {
   .locales .tarjetas .villa-urquiza {
     margin-bottom: 150px;
     padding: 30px;
-    background-color: rgba(173, 20, 23, 0.101);
+    border: 6px solid #ad1417;
+    border-radius: 10px;
+    background-color: white;
     box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37);
     -webkit-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37);
     -moz-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37); }
@@ -493,7 +498,8 @@ header nav {
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
       margin-bottom: 40px;
-      text-align: center; }
+      text-align: center;
+      color: #ad1417; }
     .locales .tarjetas .villa-urquiza .direccion-horario .direccion-urquiza {
       width: 240px;
       display: flex;
@@ -527,7 +533,9 @@ header nav {
   .locales .tarjetas .vicente-lopez {
     margin-bottom: 150px;
     padding: 30px;
-    background-color: rgba(173, 20, 23, 0.101);
+    border: 6px solid #ad1417;
+    border-radius: 10px;
+    background-color: white;
     box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37);
     -webkit-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37);
     -moz-box-shadow: 9px 9px 11px -5px rgba(0, 0, 0, 0.37); }
@@ -536,7 +544,8 @@ header nav {
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
       margin-bottom: 40px;
-      text-align: center; }
+      text-align: center;
+      color: #ad1417; }
     .locales .tarjetas .vicente-lopez .direccion-horario .direccion-vlopez {
       width: 214px;
       display: flex;
@@ -597,7 +606,7 @@ header nav {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  margin: 40px; }
+  margin-top: 80px; }
 
 .contacto section .formulario {
   display: flex;
@@ -665,7 +674,8 @@ header nav {
     .contacto section .formulario .boton-enviar input {
       background-color: #ffdb57;
       font-family: 'Montserrat', sans-serif;
-      font-weight: 600; }
+      font-weight: 600;
+      border: 1px solid #ffdb57; }
       .contacto section .formulario .boton-enviar input:active {
         background-color: #84BC82; }
 
@@ -1285,6 +1295,10 @@ footer {
   .hero h1 {
     margin-bottom: 0px; } }
 
+@media screen and (max-width: 417px) {
+  .generaciones div .recetas-de-familia {
+    margin-bottom: 50px; } }
+
 @media screen and (max-width: 400px) {
   .logo-header {
     width: 150px;
@@ -1327,7 +1341,7 @@ footer {
   .variedades .grid-menu .texto-lasagna h2 {
     font-size: 20px; }
   .historia-y-mision h1 {
-    font-size: 22px; }
+    font-size: 24px; }
   .historia-y-mision .mision h2 {
     font-size: 20px; }
   .locales h1 {
